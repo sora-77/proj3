@@ -1,0 +1,1176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css">    
+    <link rel="stylesheet" type="text/css" href="css/sub.css">    
+    <link rel="stylesheet" type="text/css" href="css/sub2.css">    
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.8.18/themes/base/jquery-ui.css" type="text/css" />  
+
+    <script src="js/jquery-3.1.1.min.js"></script> 
+    <script src="js/jquery-migrate-1.1.1.js"></script> 
+    <script src="http://code.jquery.com/ui/1.8.18/jquery-ui.min.js"></script>   
+
+    <script src="http://code.jquery.com/jquery-migrate-3.0.0.js"></script> 
+    <script src="js/slick.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/slide.js"></script>
+    <script src="js/calendar.js"></script>
+    <script src="js/sub.js"></script>
+
+    <script>
+        (function(d) {
+          var config = {
+            kitId: 'skg8msu',
+            scriptTimeout: 3000,
+            async: true
+          },
+          h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+        })(document);
+      </script>
+</head>
+<body>
+    <div id="wrap">
+        <div id="ask">
+            <div class="ask__button">
+                <span class="ask__icon">
+                    <img src="image/question.png" alt="">
+                </span>
+            </div>
+
+            <div class="ask__background">
+                <div class="ask__open">
+                    <h3 class="ask__open--title">도움이 필요하세요?</h3>
+                    <p class="ask__open--sub">
+                        저희는 고객 여러분이 호텔딜라이트를 이용하는데 있어 궁금한 점을 해결해 드리고있습니다. 고객지원 서비스는 월~금요일 09:00~18:00까지 이며, 빠른 시간 안에 문의사항을 해결해 드릴 것을 약속드립니다. 
+                    </p>
+                </div>
+                <div class="ask__conversation">
+                    <h5 class="ask__sub-title">채팅을 통해 문의해보세요</h5>
+                    <div class="ask__service-info">
+                        <ul class="ask__clerk">
+                            <li>
+                                <img src="image/person.jpg" alt="">
+                            </li>
+                            <li>
+                                <img src="image/person2.jpg" alt="">
+                            </li>
+                        </ul>
+                        <span>27분 전에 활동</span>
+                    </div>
+                    <button class="btn dark-btn"><span>채팅 시작하기</span></button>
+                </div>
+                <div class="ask__search">
+                    <label for="ask-search" class="ask__sub-title">궁금한 점을 해결해보세요</label>
+                    <div class="input-box">
+                        <input type="text" id="ask-search" placeholder="키워드를 입력하세요(ex. 환불, 코로나, 예약정보)">
+                        <button type="submit" class="input-btn"></button>
+                    </div>
+                </div>
+                <button class="close-btn">
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+
+        
+        <header id="header">
+            <div class="inner">
+                <div class="logo">
+                    <a href="index.html"><img src="image/logo_small.png" alt="호텔딜라이트 로고"></a>
+                </div>
+                <div class="search">
+                    <div class="search-box__content">
+                        <button class="find__button">숙소찾기</button>  
+                        <div class="search__find-box">
+                            <input type="text" class="find__input" placeholder="숙소찾기">
+                            <ul class="find__recent">
+                                <li><a href="#">광안리 해수욕장, 부산, 한국</a></li>
+                                <li><a href="#">부산, 한국</a></li>
+                                <li><a href="#">인천국제공항, 영종도, 인천</a></li>
+                            </ul>
+                        </div>
+                        <button class="search-btn"></button>
+                        
+                    </div>
+                    
+                </div>
+                <div class="header__icons">
+                    <div class="language-icon">
+                        <input type="checkbox" class="language__checkbox" id="language-toggle">
+                        <label for="language-toggle" class="language__button">
+                            <img src="image/globe_p.png" alt="">
+                        </label>
+                        <ul class="language-select">
+                            <li><a href="#" class="active">KR</a></li>
+                            <li><a href="#">EN</a></li>
+                        </ul>
+                    </div>
+                    
+                    <input type="checkbox" class="mypage__checkbox" id="mypage-toggle">
+                    <label for="mypage-toggle" class="mypage__button">
+                        <a>마이페이지</a>
+                        <span class="mypage__menu-icon">&nbsp;</span>
+                    </label>
+                    <ul class="mypage__sub">
+                        <li>
+                            <a href="#">로그인</a>
+                            <img src="" class="mypage__sub--icon">
+                        </li>
+                        <li>
+                            <a href="#">회원가입</a>
+                            <img class="mypage__sub--icon">
+                        </li>
+                        <li>
+                            <a href="#">여행정보</a>
+                            <img class="mypage__sub--icon">
+                        </li>
+                        <li>
+                            <a href="#">문의하기</a>
+                            <img class="mypage__sub--icon">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <main id="hotel-view">
+            <section class="regular slider">
+                <div>
+                    <div class="img-box">
+                        <img src="image/gladlive.jpg">
+                    </div>
+                </div>
+                <div>
+                    <div class="img-box">
+                        <img src="image/hotelroom1.jpg">
+                    </div>
+                </div>
+                <div>
+                    <div class="img-box">
+                        <img src="image/hotelroom2.jpg">
+                    </div>
+                </div>
+                <div>
+                    <div class="img-box">
+                        <img src="image/lobby.jpg">
+                    </div>
+                </div>
+                <div>
+                    <div class="img-box">
+                        <img src="image/hotelroom3.jpg">
+                    </div>
+                </div>
+                <div>
+                    <div class="img-box">
+                        <img src="image/bath.jpg">
+                    </div>
+                </div>
+            </section>
+            <section class="overview">
+                <h2 class="overview__heading">
+                    글래드 라이브 강남
+                </h2>
+                <div class="overview__location">
+                    <svg class="location__icon">
+                        <use xlink:href="image/sprite.svg#icon-location_on"></use>
+                    </svg>
+                    <button class="location-btn">서울 강남</button>
+                </div>
+                <button class="book-btn">
+                    <span class="btn__visible">예약하기</span>
+                    <span class="btn__invisible">객실이 4개 남았어요</span>
+                </button>
+            </section>
+        </main>
+
+
+        <section id="detail">
+            <div class="description">
+                <p class="paragraph">
+                    글래드 라이브 강남은 편리한 위치를 자랑하는 현대적인 4성급 호텔로, 9호선 지하철 언주역에서 200m 거리에 있습니다. 호텔은 레스토랑, 카페, 연회장을 갖추고 있습니다. Wi-Fi는 호텔 전역에서 무료로 이용 가능합니다. 숙소 내 전용 주차장도 제공됩니다.
+                </p>
+                <p class="paragraph">
+                    모든 객실은 목재 마루와 대형 창문을 갖추고 있습니다. 객실마다 업무용 책상과 커피 테이블이 구비되어 있어요. 투숙객은 벽걸이형 평면 TV로 케이블 채널을 시청할 수 있으며, 객실 내 무선 스피커를 통해 음악도 감상하실 수 있습니다. 전용 욕실에는 전자식 비데가 구비된 화장실 및 워크인 샤워기가 설치되어 있어요.
+                </p>
+                <p class="paragraph">
+                    호텔의 프론트 데스크/로비 공간은 4층에 자리 잡고 있습니다. 호텔에서는 투숙객의 편의를 위해 24시간 비즈니스 센터도 운영 중입니다.
+                </p>
+                <p class="paragraph">
+                    글래드 라이브 강남에서 강남대로는 서쪽 방향으로 지하철 1정거장, 코엑스몰은 동쪽 방향으로 지하철 2정거장 거리에 있습니다. 레스토랑과 상점이 밀집한 인기 많은 가로수길까지는 차로 10분이 소요됩니다.
+                </p>
+                <ul class="list">
+                    <li>금연 객실</li>
+                    <li>전객실 무료 와이파이</li>
+                    <li>피트니스 센터</li>
+                    <li>전용 주차장</li>
+                    <li>전객실 차/커피메이커 구비</li>
+                    <li>애완동물 동반 불가능</li>
+                    <li>환전</li>
+                    <li>장애인 편의시설</li>
+                    <li>가족 객실</li>
+                    <li>수하물 보관소</li>
+                    <li>24시간 프런트 데스크</li>
+                    <li>비즈니스 센터</li>
+                    <li>호텔 내(사전 예약 불필요) 전용 주차장이 숙박당 ₩5,000으로 이용 가능합니다.</li>
+                </ul>
+            </div>
+            <div class="user-reviews">
+                <div class="review__total">
+                    <div class="review__total-average">4.3</div>
+                    <div class="review__total-count">267개 후기</div>
+                </div>
+
+                <figure class="review">
+                    <blockquote class="review__user">
+                        <img src="image/person3.jpg" alt="User 1" class="review__photo">
+                        <div class="review__user-box">
+                            <p class="review__user-name">수지</p>
+                            <p class="review__user-date">2021.01.15</p>
+                        </div>
+                        <div class="review__rating">7.8</div>
+                    </blockquote>
+                    <blockquote class="review__text">
+                        침구가 정말 편하더라구요! 침구때문에 더 편안한 느낌! 전반적으로도 다 깨끗했어요!
+                    </blockquote>
+                </figure>
+                <figure class="review">
+                    <blockquote class="review__user">
+                        <img src="image/person4.png" alt="User 2" class="review__photo">
+                        <div class="review__user-box">
+                            <p class="review__user-name">선호</p>
+                            <p class="review__user-date">2021.01.07</p>
+                        </div>
+                        <div class="review__rating">9.3</div>
+                    </blockquote>
+                    <blockquote class="review__text">
+                        우선 가격이 합리적이었고 삼성역과 가까워서 위치는 최고였어요. 침대가 아주 푹신하고 샤워가운도 부드러워서 좋았습니다.
+                    </blockquote>
+                </figure>
+
+                <button class="review-btn">후기 더보기<span>&rarr;</span> </button>
+            </div>
+
+            <div class="maps">
+                <div class="maps__detail">
+                    <div class="maps__name">
+                        글래드 라이브 강남
+                    </div>
+                    <div class="maps__address">
+                        <div class="maps__road">
+                            <span>도로명</span>
+                            서울 강남구 논현동 봉은사로 223
+                        </div>
+                        <div class="maps__lot">
+                            <span>지번</span>
+                            논현동 236-9
+                        </div>
+                    </div>
+                    <div class="maps__transportation">
+                        <span>지하철</span>
+                        9호선 언주역 4번 출구 도보 4분
+                    </div>
+                </div>
+                <div class="maps__img">
+                    <a><img src="image/maps3.png" alt="글래드 라이브 강남 오시는 길"></a>
+                </div>
+            </div>
+
+        </section>
+        
+        <section id="hotel__products">
+            <div class="booking__check">
+                <div class="check-in">
+                    <label for="startDate" class="date__label">체크인 </label>
+                    <input type="text" id="startDate" class="date__input" placeholder="2020.02.23" autocomplete="off">
+                </div> 
+                <div class="check-out">
+                    <label for="endDate" class="date__label">체크아웃 </label>
+                    <input type="text" id="endDate" class="date__input" placeholder="2020.02.24" autocomplete="off">
+                </div>
+                <div class="guest">
+                    <label for="guest" class="guest__label">인원 </label>
+                    <input type="text" id="guest" class="guest__input" placeholder="성인 2명" autocomplete="off">
+                    <div class="guest__select-box">
+                        <ul class="guest__select">
+                            <li class="adult">성인</li>
+                            <li class="child">아동</li>
+                            <li class="infant">유아</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <ul class="product__list">
+                <li class="product"><a href="sub3.html">
+                    <div class="product__img">
+                        <img src="image/hotelroom1.jpg" alt="">
+                    </div>
+                    <div class="product__info">
+                        <h3 class="product__name">
+                            스탠다드 트윈룸
+                        </h3>
+                        <div class="product__info--title">
+                            객실정보 <span>+</span>                   
+                        </div>
+                        <ul class="product__info--content">
+                            <li>
+                                <svg class="info__icon">
+                                    <use xlink:href="image/sprite.svg#icon-king_bed"></use>
+                                </svg>
+                                싱글침대 2개 · 2명 · 25m<sup>2</sup></li>
+                            <li>
+                                <svg class="info__icon">
+                                    <use xlink:href="image/sprite2.svg#icon-rss_feed"></use>
+                                </svg>
+                                무료 WIFI</li>
+                            <li>
+                                <svg class="info__icon">
+                                    <use xlink:href="image/sprite2.svg#icon-automobile"></use>
+                                </svg>
+                                주차포함</li>
+                           
+                        </ul>
+                        <div class="product__info--benefit">
+                            <div class="free-cancellation">
+                                2월 6일까지 무료취소
+                            </div>
+                            <div class="field-payment">
+                                현장결제
+                            </div>
+                        </div>
+                    </div>
+                    <div class="price">
+                        <h3 class="price-room">
+                            ₩ 80,000원 <span>/박</span>
+                        </h3>
+                        <div class="price-pernight">
+                            <div class="price__detail">
+                                ₩ 80,000 &#215; 1박
+                            </div>
+                            <div class="price__result">
+                                ₩ 80,000원
+                            </div>
+                        </div>
+                        <div class="price-tax">
+                            <div class="price__detail">
+                                세금
+                            </div>
+                            <div class="price__result">
+                                ₩ 8,000원
+                            </div>
+                        </div>
+                        <div class="price-total">
+                            <div class="price__detail">
+                                총금액
+                            </div>
+                            <div class="price__result">
+                                ₩ 88,000원
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <div class="content-box">
+                    <div class="facility">객실 편의시설</div>
+                    <ul class="grouping">
+                        <li>
+                            <svg class="grouping__icon">
+                                <use xlink:href="image/sprite2.svg#icon-shower"></use>
+                            </svg>
+                            <span>욕실</span>
+                            <ul class="grouping__depth2">
+                                <li>목욕가운</li>
+                                <li>비데</li>
+                                <li>고급 세면용품</li>
+                                <li>헤어드라이어</li>
+                                <li>전용 욕실</li>
+                                <li>레인폴 샤워기</li>
+                                <li>샤워기</li>
+                                <li>슬리퍼</li>
+                                <li>타월</li>
+                                <li>칫솔, 치약 제공 안 됨</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <svg class="grouping__icon">
+                                <use xlink:href="image/sprite2.svg#icon-restaurant"></use>
+                            </svg>
+                            <span>식음료</span>
+                            <ul class="grouping__depth2">
+                                <li>전기포트</li>
+                                <li>무료 생수</li>
+                                <li>냉장고</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <svg class="grouping__icon">
+                                <use xlink:href="image/sprite2.svg#icon-rss_feed"></use>
+                            </svg>
+                            <span>인터넷</span>
+                            <ul class="grouping__depth2">
+                                <li>무료 WIFI</li>
+                                <li>무료 유선 인터넷</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <svg class="grouping__icon">
+                                <use xlink:href="image/sprite2.svg#icon-shower"></use>
+                            </svg>
+                            <span>기타</span>
+                            <ul class="grouping__depth2">
+                                <li>하우스키핑(매일)</li>
+                                <li>책상</li>
+                                <li>각각 다르게 가구 배치된 객실</li>
+                                <li>전화</li>
+                                <li>금고</li>
+                                <li>턴다운 서비스</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                </li>
+                <li class="product"><a href="sub3.html">
+                    <div class="product__img">
+                        <img src="image/hotelroom5.jpg" alt="">
+                    </div>
+                    <div class="product__info">
+                        <h3 class="product__name">
+                            슈페리어 더블룸
+                        </h3>
+                        <div class="product__info--title">
+                            객실정보 <span>+</span>                   
+                        </div>
+                        <ul class="product__info--content">
+                            <li>
+                                <svg class="info__icon">
+                                    <use xlink:href="image/sprite.svg#icon-king_bed"></use>
+                                </svg>
+                                퀸침대 1개 · 2명 · 25m<sup>2</sup></li>
+                            <li>
+                                <svg class="info__icon">
+                                    <use xlink:href="image/sprite2.svg#icon-rss_feed"></use>
+                                </svg>
+                                무료 WIFI</li>
+                            <li>
+                                <svg class="info__icon">
+                                    <use xlink:href="image/sprite2.svg#icon-automobile"></use>
+                                </svg>
+                                주차포함</li>
+                           
+                        </ul>
+                        <div class="product__info--benefit">
+                            <div class="free-cancellation">
+                                2월 6일까지 무료취소
+                            </div>
+                            <div class="field-payment">
+                                현장결제
+                            </div>
+                        </div>
+                    </div>
+                    <div class="price">
+                        <h3 class="price-room">
+                            ₩ 90,000원 <span>/박</span>
+                        </h3>
+                        <div class="price-pernight">
+                            <div class="price__detail">
+                                ₩ 80,000 &#215; 1박
+                            </div>
+                            <div class="price__result">
+                                ₩ 80,000원
+                            </div>
+                        </div>
+                        <div class="price-tax">
+                            <div class="price__detail">
+                                세금
+                            </div>
+                            <div class="price__result">
+                                ₩ 9,000원
+                            </div>
+                        </div>
+                        <div class="price-total">
+                            <div class="price__detail">
+                                총금액
+                            </div>
+                            <div class="price__result">
+                                ₩ 99,000원
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <div class="content-box">
+                    <div class="facility">객실 편의시설</div>
+                    <ul class="grouping">
+                        <li>
+                            <svg class="grouping__icon">
+                                <use xlink:href="image/sprite2.svg#icon-shower"></use>
+                            </svg>
+                            <span>욕실</span>
+                            <ul class="grouping__depth2">
+                                <li>목욕가운</li>
+                                <li>비데</li>
+                                <li>고급 세면용품</li>
+                                <li>헤어드라이어</li>
+                                <li>전용 욕실</li>
+                                <li>레인폴 샤워기</li>
+                                <li>샤워기</li>
+                                <li>슬리퍼</li>
+                                <li>타월</li>
+                                <li>칫솔, 치약 제공 안 됨</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <svg class="grouping__icon">
+                                <use xlink:href="image/sprite2.svg#icon-restaurant"></use>
+                            </svg>
+                            <span>식음료</span>
+                            <ul class="grouping__depth2">
+                                <li>전기포트</li>
+                                <li>무료 생수</li>
+                                <li>냉장고</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <svg class="grouping__icon">
+                                <use xlink:href="image/sprite2.svg#icon-rss_feed"></use>
+                            </svg>
+                            <span>인터넷</span>
+                            <ul class="grouping__depth2">
+                                <li>무료 WIFI</li>
+                                <li>무료 유선 인터넷</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <svg class="grouping__icon">
+                                <use xlink:href="image/sprite2.svg#icon-shower"></use>
+                            </svg>
+                            <span>기타</span>
+                            <ul class="grouping__depth2">
+                                <li>하우스키핑(매일)</li>
+                                <li>책상</li>
+                                <li>각각 다르게 가구 배치된 객실</li>
+                                <li>전화</li>
+                                <li>금고</li>
+                                <li>턴다운 서비스</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                </li>
+                <li class="product"><a href="sub3.html">
+                    <div class="product__img">
+                        <img src="image/hotelroom4.jpg" alt="">
+                    </div>
+                    <div class="product__info">
+                        <h3 class="product__name">
+                            디럭스 더블룸
+                        </h3>
+                        <div class="product__info--title">
+                            객실정보 <span>+</span>                   
+                        </div>
+                        <ul class="product__info--content">
+                            <li>
+                                <svg class="info__icon">
+                                    <use xlink:href="image/sprite.svg#icon-king_bed"></use>
+                                </svg>
+                                퀸침대 1개 · 2명 · 43m<sup>2</sup></li>
+                            <li>
+                                <svg class="info__icon">
+                                    <use xlink:href="image/sprite2.svg#icon-rss_feed"></use>
+                                </svg>
+                                무료 WIFI</li>
+                            <li>
+                                <svg class="info__icon">
+                                    <use xlink:href="image/sprite2.svg#icon-automobile"></use>
+                                </svg>
+                                주차포함</li>
+                           
+                        </ul>
+                        <div class="product__info--benefit">
+                            <div class="free-cancellation">
+                                2월 6일까지 무료취소
+                            </div>
+                            <div class="field-payment">
+                                현장결제
+                            </div>
+                        </div>
+                    </div>
+                    <div class="price">
+                        <h3 class="price-room">
+                            ₩ 125,000원 <span>/박</span>
+                        </h3>
+                        <div class="price-pernight">
+                            <div class="price__detail">
+                                ₩ 125,000 &#215; 1박
+                            </div>
+                            <div class="price__result">
+                                ₩ 125,000원
+                            </div>
+                        </div>
+                        <div class="price-tax">
+                            <div class="price__detail">
+                                세금
+                            </div>
+                            <div class="price__result">
+                                ₩ 12,500원
+                            </div>
+                        </div>
+                        <div class="price-total">
+                            <div class="price__detail">
+                                총금액
+                            </div>
+                            <div class="price__result">
+                                ₩ 137,500원
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <div class="content-box">
+                    <div class="facility">객실 편의시설</div>
+                    <ul class="grouping">
+                        <li>
+                            <svg class="grouping__icon">
+                                <use xlink:href="image/sprite2.svg#icon-shower"></use>
+                            </svg>
+                            <span>욕실</span>
+                            <ul class="grouping__depth2">
+                                <li>목욕가운</li>
+                                <li>비데</li>
+                                <li>고급 세면용품</li>
+                                <li>헤어드라이어</li>
+                                <li>전용 욕실</li>
+                                <li>레인폴 샤워기</li>
+                                <li>샤워기</li>
+                                <li>슬리퍼</li>
+                                <li>타월</li>
+                                <li>칫솔, 치약 제공 안 됨</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <svg class="grouping__icon">
+                                <use xlink:href="image/sprite2.svg#icon-restaurant"></use>
+                            </svg>
+                            <span>식음료</span>
+                            <ul class="grouping__depth2">
+                                <li>전기포트</li>
+                                <li>무료 생수</li>
+                                <li>냉장고</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <svg class="grouping__icon">
+                                <use xlink:href="image/sprite2.svg#icon-rss_feed"></use>
+                            </svg>
+                            <span>인터넷</span>
+                            <ul class="grouping__depth2">
+                                <li>무료 WIFI</li>
+                                <li>무료 유선 인터넷</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <svg class="grouping__icon">
+                                <use xlink:href="image/sprite2.svg#icon-shower"></use>
+                            </svg>
+                            <span>기타</span>
+                            <ul class="grouping__depth2">
+                                <li>하우스키핑(매일)</li>
+                                <li>책상</li>
+                                <li>각각 다르게 가구 배치된 객실</li>
+                                <li>전화</li>
+                                <li>금고</li>
+                                <li>턴다운 서비스</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                </li>
+                <li class="product"><a href="sub3.html">
+                    <div class="product__img">
+                        <img src="image/hotelroom2.jpg" alt="">
+                    </div>
+                    <div class="product__info">
+                        <h3 class="product__name">
+                            점보 트윈룸
+                        </h3>
+                        <div class="product__info--title">
+                            객실정보 <span>+</span>                   
+                        </div>
+                        <ul class="product__info--content">
+                            <li>
+                                <svg class="info__icon">
+                                    <use xlink:href="image/sprite.svg#icon-king_bed"></use>
+                                </svg>
+                                더블침대 1개 싱글침대 1개 · 3명 · 33m<sup>2</sup></li>
+                            <li>
+                                <svg class="info__icon">
+                                    <use xlink:href="image/sprite2.svg#icon-rss_feed"></use>
+                                </svg>
+                                무료 WIFI</li>
+                            <li>
+                                <svg class="info__icon">
+                                    <use xlink:href="image/sprite2.svg#icon-automobile"></use>
+                                </svg>
+                                주차포함</li>
+                           
+                        </ul>
+                        <div class="product__info--benefit">
+                            <div class="free-cancellation">
+                                2월 6일까지 무료취소
+                            </div>
+                            <div class="field-payment">
+                                현장결제
+                            </div>
+                        </div>
+                    </div>
+                    <div class="price">
+                        <h3 class="price-room">
+                            ₩ 145,000원 <span>/박</span>
+                        </h3>
+                        <div class="price-pernight">
+                            <div class="price__detail">
+                                ₩ 145,000 &#215; 1박
+                            </div>
+                            <div class="price__result">
+                                ₩ 145,000원
+                            </div>
+                        </div>
+                        <div class="price-tax">
+                            <div class="price__detail">
+                                세금
+                            </div>
+                            <div class="price__result">
+                                ₩ 14,500원
+                            </div>
+                        </div>
+                        <div class="price-total">
+                            <div class="price__detail">
+                                총금액
+                            </div>
+                            <div class="price__result">
+                                ₩ 159,500원
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <div class="content-box">
+                    <div class="facility">객실 편의시설</div>
+                    <ul class="grouping">
+                        <li>
+                            <svg class="grouping__icon">
+                                <use xlink:href="image/sprite2.svg#icon-shower"></use>
+                            </svg>
+                            <span>욕실</span>
+                            <ul class="grouping__depth2">
+                                <li>목욕가운</li>
+                                <li>비데</li>
+                                <li>고급 세면용품</li>
+                                <li>헤어드라이어</li>
+                                <li>전용 욕실</li>
+                                <li>레인폴 샤워기</li>
+                                <li>샤워기</li>
+                                <li>슬리퍼</li>
+                                <li>타월</li>
+                                <li>칫솔, 치약 제공 안 됨</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <svg class="grouping__icon">
+                                <use xlink:href="image/sprite2.svg#icon-restaurant"></use>
+                            </svg>
+                            <span>식음료</span>
+                            <ul class="grouping__depth2">
+                                <li>전기포트</li>
+                                <li>무료 생수</li>
+                                <li>냉장고</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <svg class="grouping__icon">
+                                <use xlink:href="image/sprite2.svg#icon-rss_feed"></use>
+                            </svg>
+                            <span>인터넷</span>
+                            <ul class="grouping__depth2">
+                                <li>무료 WIFI</li>
+                                <li>무료 유선 인터넷</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <svg class="grouping__icon">
+                                <use xlink:href="image/sprite2.svg#icon-shower"></use>
+                            </svg>
+                            <span>기타</span>
+                            <ul class="grouping__depth2">
+                                <li>하우스키핑(매일)</li>
+                                <li>책상</li>
+                                <li>각각 다르게 가구 배치된 객실</li>
+                                <li>전화</li>
+                                <li>금고</li>
+                                <li>턴다운 서비스</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                </li>
+                <li class="product"><a href="sub3.html">
+                    <div class="product__img">
+                        <img src="image/hotelroom3.jpg" alt="">
+                    </div>
+                    <div class="product__info">
+                        <h3 class="product__name">
+                            글래드 하우스
+                        </h3>
+                        <div class="product__info--title">
+                            객실정보 <span>+</span>                   
+                        </div>
+                        <ul class="product__info--content">
+                            <li>
+                                <svg class="info__icon">
+                                    <use xlink:href="image/sprite.svg#icon-king_bed"></use>
+                                </svg>
+                                퀸침대 1개 · 2명 · 53m<sup>2</sup></li>
+                            <li>
+                                <svg class="info__icon">
+                                    <use xlink:href="image/sprite2.svg#icon-rss_feed"></use>
+                                </svg>
+                                무료 WIFI</li>
+                            <li>
+                                <svg class="info__icon">
+                                    <use xlink:href="image/sprite2.svg#icon-automobile"></use>
+                                </svg>
+                                주차포함</li>
+                           
+                        </ul>
+                        <div class="product__info--benefit">
+                            <div class="free-cancellation">
+                                2월 6일까지 무료취소
+                            </div>
+                            <div class="field-payment">
+                                현장결제
+                            </div>
+                        </div>
+                    </div>
+                    <div class="price">
+                        <h3 class="price-room">
+                            ₩ 210,000원 <span>/박</span>
+                        </h3>
+                        <div class="price-pernight">
+                            <div class="price__detail">
+                                ₩ 210,000 &#215; 1박
+                            </div>
+                            <div class="price__result">
+                                ₩ 210,000원
+                            </div>
+                        </div>
+                        <div class="price-tax">
+                            <div class="price__detail">
+                                세금
+                            </div>
+                            <div class="price__result">
+                                ₩ 21,000원
+                            </div>
+                        </div>
+                        <div class="price-total">
+                            <div class="price__detail">
+                                총금액
+                            </div>
+                            <div class="price__result">
+                                ₩ 231,000원
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <div class="content-box">
+                    <div class="facility">객실 편의시설</div>
+                    <ul class="grouping">
+                        <li>
+                            <svg class="grouping__icon">
+                                <use xlink:href="image/sprite2.svg#icon-shower"></use>
+                            </svg>
+                            <span>욕실</span>
+                            <ul class="grouping__depth2">
+                                <li>목욕가운</li>
+                                <li>비데</li>
+                                <li>고급 세면용품</li>
+                                <li>헤어드라이어</li>
+                                <li>전용 욕실</li>
+                                <li>레인폴 샤워기</li>
+                                <li>샤워기</li>
+                                <li>슬리퍼</li>
+                                <li>타월</li>
+                                <li>칫솔, 치약 제공 안 됨</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <svg class="grouping__icon">
+                                <use xlink:href="image/sprite2.svg#icon-restaurant"></use>
+                            </svg>
+                            <span>식음료</span>
+                            <ul class="grouping__depth2">
+                                <li>전기포트</li>
+                                <li>무료 생수</li>
+                                <li>냉장고</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <svg class="grouping__icon">
+                                <use xlink:href="image/sprite2.svg#icon-rss_feed"></use>
+                            </svg>
+                            <span>인터넷</span>
+                            <ul class="grouping__depth2">
+                                <li>무료 WIFI</li>
+                                <li>무료 유선 인터넷</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <svg class="grouping__icon">
+                                <use xlink:href="image/sprite2.svg#icon-shower"></use>
+                            </svg>
+                            <span>기타</span>
+                            <ul class="grouping__depth2">
+                                <li>하우스키핑(매일)</li>
+                                <li>책상</li>
+                                <li>각각 다르게 가구 배치된 객실</li>
+                                <li>전화</li>
+                                <li>금고</li>
+                                <li>턴다운 서비스</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                </li>
+            </ul>
+        </section>
+
+        <section id="similar">
+            <h2 class="section__title">
+                비슷한 추천 상품
+            </h2>
+            <div class="similar__prs">
+                <article class="product">
+                    <div class="product__review">
+                        <span>4.7</span>
+                        <span class="review__count">
+                            1,267 후기
+                        </span>
+                    </div>
+                    <div class="product-img">
+                        <img src="image/shillastay.jpg" alt="">
+                    </div>
+                    <div class="product__content">
+                        
+                        <div class="product__top">
+                            <div class="product__title">
+                                신라스테이 삼성
+                            </div>
+                            <a class="product__location">
+                                서울 강남
+                            </a>
+                        </div>
+                        <div class="product__bottom">
+                            <div class="product__price--b">
+                                ₩149,000
+                            </div>
+                            <div class="product__price--c">
+                                ₩111,750
+                            </div>
+                        </div>
+                    </div>
+                    <button class="product-btn">
+                        <span>자세히 보기</span>
+                    </button>
+                </article>
+                <article class="product">
+                    <div class="product__review">
+                        <span>4.4</span>
+                        <span class="review__count">
+                           3,821 후기
+                        </span>
+                    </div>
+                    <div class="product-img">
+                        <img src="image/l7.jpg" alt="">
+                    </div>
+                    <div class="product__content">
+                        
+                        <div class="product__top">
+                            <div class="product__title">
+                                L7 강남 바이 롯데
+                            </div>
+                            <a class="product__location">
+                                서울 강남
+                            </a>
+                        </div>
+                        <div class="product__bottom">
+                            <div class="product__price--b">
+                                ₩211,000
+                            </div>
+                            <div class="product__price--c">
+                                ₩99,000
+                            </div>
+                        </div>
+                    </div>
+                    <button class="product-btn">
+                        <span>자세히 보기</span>
+                    </button>
+                </article>
+                <article class="product">
+                    <div class="product__review">
+                        <span>4.1</span>
+                        <span class="review__count">
+                            484 후기
+                        </span>
+                    </div>
+                    <div class="product-img">
+                        <img src="image/hotelentra.jpg" alt="">
+                    </div>
+                    <div class="product__content">
+                        
+                        <div class="product__top">
+                            <div class="product__title">
+                                호텔 엔트라
+                            </div>
+                            <a class="product__location">
+                                서울 강남
+                            </a>
+                        </div>
+                        <div class="product__bottom">
+                            <div class="product__price--b">
+                                ₩307,490
+                            </div>
+                            <div class="product__price--c">
+                                ₩119,850
+                            </div>
+                        </div>
+                    </div>
+                    <button class="product-btn">
+                        <span>자세히 보기</span>
+                    </button>
+                </article>
+                <article class="product">
+                    <div class="product__review">
+                        <span>4.8</span>
+                        <span class="review__count">
+                            4,540 후기
+                        </span>
+                    </div>
+                    <div class="product-img">
+                        <img src="image/gladgangnam.jpg" alt="">
+                    </div>
+                    <div class="product__content">
+                        
+                        <div class="product__top">
+                            <div class="product__title">
+                                글래드 강남 코엑스 센터
+                            </div>
+                            <a class="product__location">
+                                서울 강남
+                            </a>
+                        </div>
+                        <div class="product__bottom">
+                            <div class="product__price--b">
+                                ₩241,000
+                            </div>
+                            <div class="product__price--c">
+                                ₩80,000
+                            </div>
+                        </div>
+                    </div>
+                    <button class="product-btn">
+                        <span>자세히 보기</span>
+                    </button>
+                </article>
+            </div>
+        </section>
+
+        <section id="app__banner">
+            <div class="inner">
+                <button class="btn google-btn green-btn">
+                    <img src="image/google.png" alt="">
+                    <span>Google Play</span>
+                </button>
+                <button class="btn apple-btn green-btn">
+                    <img src="image/apple.png" alt="">
+                    <span>Apple store</span>
+                </button>
+            </div>
+        </section>
+
+        <footer id="footer">
+            <div class="inner">
+                <div class="footer__top">
+                    <div class="footer__logo-box">
+                        <img src="image/darkhotelDelight_logo.png" alt="">
+                    </div>
+                    <ul class="sitemap">
+                        <li><span>숙소</span>
+                            <ul class="sitemap__depth2">
+                                <li><a href="#">국내숙소</a></li>
+                                <li><a href="#">해외숙소</a></li>
+                                <li><a href="#">프로모션</a></li>
+                                <li><a href="#">무료 취소 숙소</a></li>
+                                
+                            </ul>
+                        </li>
+                        <li><span>커뮤니티</span>
+                            <ul class="sitemap__depth2">
+                                <li><a href="#">이용후기</a></li>
+                                <li><a href="#">공지사항</a></li>
+                            </ul>
+                        </li>
+                        <li><span>회사소개</span>
+                            <ul class="sitemap__depth2">
+                                <li><a href="#">호텔딜라이트 이야기</a></li>
+                                <li><a href="#">호텔딜라이트 소식</a></li>
+                            </ul>
+                        </li>
+                        <li><span>ETC</span>
+                            <ul class="sitemap__depth2">
+                                <li><a href="#">코로나19 관련 FAQs</a></li>
+                                <li><a href="#">고객센터</a></li>
+                                
+                            </ul>
+                        </li>
+                    </ul>
+                
+                </div>
+                <div class="footer__mid">
+                    <ul class="legal">
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                        <li><a href="#">저작권 안내</a></li>
+                    </ul>
+                    <div class="information">
+                        <address>서울시 구로구 디지털로26길 111 (구로동 222-3, 제이엔케이디지털타워) 17층 1707호, 13층 대표이사 김소라</address>
+                        <p>사업자등록번호 215-86-41873 통신판매업신고 제2006-서울구로-2594호 대표번호: 1566-3655 팩스: 02-3281-5111~2</p>
+                    </div>
+                </div>
+                <div class="footer__bottom">
+                    <div class="sns__list">
+                        <svg class="sns__icon">
+                            <use xlink:href="image/sprite.svg#icon-facebook"></use>
+                        </svg>
+                        <svg class="sns__icon">
+                            <use xlink:href="image/sprite.svg#icon-instagram"></use>
+                        </svg>
+                        <svg class="sns__icon">
+                            <use xlink:href="image/sprite.svg#icon-twitter"></use>
+                        </svg>
+                    </div>
+                    <div class="copyright">
+                        본 사이트는 2021년 프론트엔드디자인 교육과정을 이수한
+                        포트폴리오 저작물이므로 불법 복제는 불가하며 
+                        사용된 이미지는 무료 이미지 및 호텔엔조이 업체의 이미지를 편집하여 사용하였으므로 
+                        저작권은 해당 기업 및 이미지 저작자에게 있음을 알려드립니다.
+                        문제의 소지가 있으면 ksr0713@gmail.com로 
+                        연락 주시기 바랍니다.
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+    </div> <!--wrap-->
+
+</body>
+</html>

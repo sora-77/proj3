@@ -1,0 +1,132 @@
+#header {
+  position: static;
+  box-shadow: 1px 3px 15px rgba(0, 0, 0, 0.2);
+}
+
+#header .inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#header .logo {
+  flex: 0 0 20%;
+}
+
+#header .header__icons {
+  z-index: 1000;
+}
+
+#header .header__icons .language-select li a {
+  color: var(--color-primary);
+}
+
+.search {
+  border: 1px solid var(--color-primary-light);
+  border-radius: 100px;
+  width: 30%;
+  padding: 0.7rem 0;
+  padding-left: 3rem;
+  padding-right: 0.8rem;
+}
+
+.search .search-box__content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search__find-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  border-radius: 7px;
+  width: 70%;
+  padding: 0.8rem 0;
+  transform-origin: top left;
+  transform: scale(0);
+  transition: 0.3s;
+  z-index: 1000;
+}
+
+.search .find__button {
+  font-size: var(--medium-size);
+  color: var(--color-primary-light);
+  font-weight: 400;
+}
+
+.search .find__input {
+  border: none;
+  outline: none;
+  display: block;
+  width: 88%;
+  padding: 1rem 0;
+  margin: 0 auto;
+  font-size: var(--medium-size);
+  border-bottom: 1px solid var(--color-grey);
+  margin-bottom: 1.2rem;
+}
+
+.search .find__input::placeholder {
+  font-family: var(--noto-font);
+}
+
+.search .search__find-box .find__recent {
+  padding-bottom: 4rem;
+}
+
+.search .search__find-box .find__recent li {
+  line-height: 3.8rem;
+  padding-left: 4rem;
+}
+
+.search .search__find-box .find__recent li:hover {
+  background-color: var(--color-grey-light);
+}
+.search .search__find-box .find__recent li a {
+  display: block;
+  font-size: var(--small-size);
+  font-family: var(--noto-font);
+  color: #000;
+  font-weight: 300;
+  position: relative;
+}
+
+.search .search__find-box .find__recent li a::before {
+  content: "";
+  display: block;
+  background: url(../image/clock.png) no-repeat;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-size: cover;
+  position: absolute;
+  top: 1.2rem;
+  left: -2rem;
+}
+
+.search .search-btn {
+  background-image: url(../image/search_btn.png);
+  background-repeat: no-repeat;
+  width: 3.2rem;
+  height: 3.2rem;
+  display: block;
+  background-size: cover;
+  background-position: center;
+}
+
+#search .search-box .search__find-box {
+  width: 35rem;
+}
+
+#search .search-box .search--scroll-down .find__button {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 70%;
+  font-size: var(--medium-size);
+  font-family: var(--noto-font);
+  font-weight: 400;
+  color: var(--color-primary-light);
+}

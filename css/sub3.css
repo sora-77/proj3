@@ -1,0 +1,341 @@
+#whole-procedure {
+  margin-left: 28rem;
+  margin-right: 28rem;
+  border-bottom: 1px solid var(--color-grey);
+}
+
+#whole-procedure .procedure-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 0.8rem;
+}
+
+#whole-procedure .procedure-list li {
+  margin: 0 2.8rem;
+  font-size: 1.9rem;
+  font-family: var(--noto-font);
+  font-weight: 300;
+  /*background-color: rgba(136, 148, 180, 0.6);
+  border-radius: 100px;
+  */
+  color: var(--color-primary-light);
+  padding: 1.2rem 0;
+
+  width: 12rem;
+  text-align: center;
+}
+
+#whole-procedure .procedure-list li.current {
+  color: var(--color-primary);
+  border-bottom: 1px solid currentColor;
+}
+
+.row::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.row .booking {
+  float: left;
+  width: 55%;
+  height: auto;
+  padding-left: 32rem;
+}
+
+.row .booking .heading-secondary {
+  font-size: var(--title-size);
+  font-weight: 400;
+  margin-bottom: 2.4rem;
+}
+
+.row .booking .section__title {
+  font-size: 5rem;
+  font-weight: 400;
+  margin-top: 3rem;
+  margin-bottom: 4.5rem;
+  color: var(--color-primary);
+}
+
+.row .booking .form {
+  margin-bottom: 6rem;
+}
+
+.row .booking .form__group {
+  width: 80%;
+}
+
+.row .booking .form__label {
+  margin-bottom: 0.8rem;
+}
+
+.row .booking .form__label::before {
+  content: "*";
+  display: inline-block;
+  color: red;
+  font-size: var(--medium-size);
+  transform: translateX(-3px) translateY(3px);
+}
+
+.row .booking .form__request::before {
+  content: "";
+}
+
+.row .booking .request__detail {
+  font-size: var(--small-size);
+  font-family: var(--noto-font);
+  font-weight: 300;
+  margin-bottom: 1.2rem;
+  line-height: 1.8em;
+}
+
+.row .booking .form__label {
+  font-size: var(--medium-size);
+  font-family: var(--noto-font);
+  font-weight: 300;
+  padding-left: 0rem;
+  display: block;
+}
+
+.row .booking .form__input {
+  font-size: var(--medium-size);
+  font-family: var(--noto-font);
+  padding: 0.5rem;
+  border: none;
+  border-bottom: 1px solid var(--color-grey-dark);
+  width: 100%;
+  margin-bottom: 2.4rem;
+  outline: none;
+}
+
+.row .booking .request__input {
+  border: 1px solid var(--color-grey-dark);
+}
+
+.row .booking .checkbox-form {
+  display: flex;
+  align-items: center;
+}
+
+.row .booking .checkbox-input {
+  width: auto;
+  margin-bottom: 0;
+  margin-right: 0.8rem;
+  display: none;
+}
+
+.row .booking .checkbox-label {
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+}
+
+.row .booking .checkbox-label::before {
+  content: "";
+}
+
+.row .booking .form__checkbox-btn {
+  display: block;
+  width: 2rem;
+  height: 2rem;
+  background-color: var(--color-grey);
+  margin-right: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.row .booking .form__checkbox-btn::after {
+  content: "✔";
+  display: block;
+  color: #fff;
+  font-size: var(--small-size);
+  margin-top: -3px;
+  display: none;
+}
+
+.checkbox-input:checked + .checkbox-label .form__checkbox-btn {
+  background-color: var(--color-primary);
+}
+
+.checkbox-input:checked + .checkbox-label .form__checkbox-btn::after {
+  display: block;
+}
+
+.row .booking .form__guest {
+  display: none;
+}
+
+.row .booking .payment-form .checkbox-form__group {
+  display: flex;
+  margin-bottom: 2.4rem;
+}
+
+.row .booking .form__card-group {
+  display: flex;
+}
+
+.row .booking .form__card-group > div {
+  flex: 0 0 30%;
+}
+
+.row .booking .form__card-group .expiry__input {
+  width: 5rem;
+}
+
+.row .booking .form__card-group input:nth-child(2) {
+  margin-right: 1.2rem;
+}
+
+.row .booking .form__card-group span {
+  font-size: var(--title-size);
+  font-family: var(--noto-font);
+  font-weight: 100;
+  color: var(--color-grey-dark);
+}
+
+.row .booking form input::placeholder {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.row .booking .form__card-group .form__expiry {
+  margin-right: 8rem;
+}
+
+.row .booking .payment-form .checkbox-form__group > div {
+  flex: 50%;
+}
+
+.row .booking .last-checking > div {
+  width: 80%;
+}
+
+.row .booking .last-checking .cancellation {
+  font-size: 1.5rem;
+  font-family: var(--noto-font);
+  font-weight: 300;
+  margin-bottom: 1.2rem;
+  color: var(--color-accent);
+}
+
+.row .booking .last-checking .checkbox-label {
+  margin-bottom: 3rem;
+}
+
+.row .booking .last-checking .checkbox-label .text__checkbox-label {
+  width: 100%;
+}
+
+.row .booking .pay-btn {
+  width: 100%;
+  background-color: var(--color-primary);
+  color: #fff;
+  padding: 1.2rem 0;
+  margin-bottom: 8rem;
+}
+
+.row .book-summary {
+  float: left;
+  padding-top: 4.5rem;
+  padding-left: 4rem;
+  width: 45%;
+  height: 100vh;
+  background-color: var(--color-grey-light);
+  position: sticky;
+  top: 0;
+}
+
+.row .book-summary .summary__content {
+  width: 80%;
+}
+
+.row .book-summary .summary__content .section__title {
+  font-size: var(--title-size);
+  font-weight: 300;
+  padding-bottom: 2.4rem;
+  margin-bottom: 2.4rem;
+  border-bottom: 1px solid var(--color-grey);
+}
+
+.row .book-summary .summary__content .summary__img {
+  width: 100%;
+  margin-bottom: 3.6rem;
+}
+
+.row .book-summary .summary__content .summary__img img {
+  width: 100%;
+  height: calc(649px * 0.43);
+  object-fit: cover;
+  object-position: 50% 70%;
+}
+
+.row .book-summary .summary__content .summary__text {
+  padding-bottom: 4.5rem;
+  border-bottom: 1px solid var(--color-grey);
+  margin-bottom: 2.4rem;
+}
+
+.row .book-summary .summary__content .summary__text .hotel__name {
+  font-size: var(--title-size);
+  font-weight: 500;
+  color: var(--color-primary);
+  margin-bottom: 1.2rem;
+}
+
+.row .book-summary .summary__content .summary__text .hotel__room {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.row .book-summary .summary__content .summary__text .hotel__room--name {
+  font-size: var(--large-size);
+  font-weight: 300;
+  font-family: var(--noto-font);
+}
+
+.row .book-summary .summary__content .summary__text .hotel__room--price {
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.row .book-summary .summary__content .summary__text .hotel__date {
+  font-size: 2rem;
+  font-family: var(--noto-font);
+  font-weight: 100;
+  color: var(--color-grey-dark);
+}
+
+.row .book-summary .summary__total > div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.2rem;
+}
+
+.row .book-summary .summary__total > div span:first-child {
+  font-size: 1.9rem;
+  font-weight: 300;
+  font-family: var(--noto-font);
+}
+.row .book-summary .summary__total > div span:last-child {
+  font-size: 1.9rem;
+  font-weight: 300;
+}
+
+.row .book-summary .summary__total .grandtotal {
+  padding-top: 2rem;
+  margin-top: 1.8rem;
+  border-top: 1px solid var(--color-grey-dark);
+}
+
+.row .book-summary .summary__total .grandtotal span:first-child {
+  font-size: 2.2rem;
+  font-weight: 300;
+}
+
+.row .book-summary .summary__total .grandtotal span:last-child {
+  font-size: var(--large-size);
+  font-weight: 700;
+}
