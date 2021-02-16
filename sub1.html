@@ -95,43 +95,10 @@
             </div>
         </div>
 
-        <header id="header">
-            <div class="inner">
-                <div class="logo">
-                    <a href="index.html"><img src="image/logo_small.png" alt="호텔딜라이트 로고"></a>
-                </div>
-                <div class="search">
-                    <div class="search-box__content">
-                        <button class="find__button">숙소찾기</button>  
-                        <div class="search__find-box">
-                            <input type="text" class="find__input" placeholder="숙소찾기">
-                            <ul class="find__recent">
-                                <li><a href="#">광안리 해수욕장, 부산, 한국</a></li>
-                                <li><a href="#">부산, 한국</a></li>
-                                <li><a href="#">인천국제공항, 영종도, 인천</a></li>
-                            </ul>
-                        </div>
-                        <button class="search-btn"></button>
-                        
-                    </div>
-                    
-                </div>
-                <div class="header__icons">
-                    <div class="language-icon">
-                        <input type="checkbox" class="language__checkbox" id="language-toggle">
-                        <label for="language-toggle" class="language__button">
-                            <img src="image/globe_p.png" alt="">
-                        </label>
-                        <ul class="language-select">
-                            <li><a href="#" class="active">KR</a></li>
-                            <li><a href="#">EN</a></li>
-                        </ul>
-                    </div>
-                    
-                    <input type="checkbox" class="mypage__checkbox" id="mypage-toggle">
+        <div class="mypage-box">
+            <input type="checkbox" class="mypage__checkbox" id="mypage-toggle">
                     <label for="mypage-toggle" class="mypage__button">
                         <a>마이페이지</a>
-                        <span class="mypage__menu-icon">&nbsp;</span>
                     </label>
                     <ul class="mypage__sub">
                         <li>
@@ -151,1273 +118,1306 @@
                             <img class="mypage__sub--icon">
                         </li>
                     </ul>
+        </div>
+
+        <header id="header">
+            <div class="inner">
+                <div class="logo">
+                    <a href="index.html"><img src="image/logo_small.png" alt="호텔딜라이트 로고"></a>
                 </div>
+                <div class="search">
+                    <div class="search-box__content">
+                        <input type="text" class="find__button" placeholder="숙소찾기">
+  
+                        <div class="search__find-box">
+                            <input type="text" class="find__input" placeholder="숙소찾기">
+                            <ul class="find__recent">
+                                <li><a href="#">광안리 해수욕장, 부산, 한국</a></li>
+                                <li><a href="#">부산, 한국</a></li>
+                                <li><a href="#">인천국제공항, 영종도, 인천</a></li>
+                            </ul>
+                        </div>
+                        <button class="search-btn"></button>
+                        
+                    </div>
+                    
+                </div>
+                <div class="blank"></div>    
+                    
             </div>
         </header>
 
-        <section id="filter">
-            <h2 class="section__title">필터</h2>
-            <ul class="form">
-                <li class="form__group"><span>숙소유형</span>
-                    <div class="form__check-group">
-                        <input type="checkbox" class="filter__input" id="type-hotel">
-                        <label for="type-hotel" class="filter__label">
-                            <span class="form__checkbox-btn"></span>
-                            호텔
-                        </label>
-                    </div>
+        <div class="main">
+            <div class="main--left">
+                <section id="filter">
+                    <h2 class="section__title">필터</h2>
+                    <ul class="form">
+                        <li class="form__group"><span>숙소유형</span>
+                            <div class="form__check-group">
+                                <input type="checkbox" class="filter__input" id="type-hotel">
+                                <label for="type-hotel" class="filter__label">
+                                    <span class="form__checkbox-btn"></span>
+                                    호텔
+                                </label>
+                            </div>
 
-                    <div class="form__check-group">
-                        <input type="checkbox" class="filter__input" id="type-resort">
-                        <label for="type-resort" class="filter__label">
-                            <span class="form__checkbox-btn"></span>
-                            리조트
-                        </label>
-                    </div>
+                            <div class="form__check-group">
+                                <input type="checkbox" class="filter__input" id="type-resort">
+                                <label for="type-resort" class="filter__label">
+                                    <span class="form__checkbox-btn"></span>
+                                    리조트
+                                </label>
+                            </div>
 
-                    <div class="form__check-group">
-                        <input type="checkbox" class="filter__input" id="type-pension">
-                        <label for="type-pension" class="filter__label">
-                            <span class="form__checkbox-btn"></span>
+                            <div class="form__check-group">
+                                <input type="checkbox" class="filter__input" id="type-pension">
+                                <label for="type-pension" class="filter__label">
+                                    <span class="form__checkbox-btn"></span>
 
-                            펜션
-                        </label>
-                    </div>
+                                    펜션
+                                </label>
+                            </div>
 
-                    <div class="form__check-group">
-                        <input type="checkbox" class="filter__input" id="type-guest">
-                        <label for="type-guest" class="filter__label">
-                            <span class="form__checkbox-btn"></span>
+                            <div class="form__check-group">
+                                <input type="checkbox" class="filter__input" id="type-guest">
+                                <label for="type-guest" class="filter__label">
+                                    <span class="form__checkbox-btn"></span>
 
-                            게스트하우스
-                        </label>
-                    </div>
+                                    게스트하우스
+                                </label>
+                            </div>
 
-                    <div class="form__check-group">
-                        <input type="checkbox" class="filter__input" id="type-hostel">
-                        <label for="type-hostel" class="filter__label">
-                            <span class="form__checkbox-btn"></span>
-                            호스텔
-                        </label>
-                    </div>
-                </li>
-                <li class="form__group"><span>시설</span>
-                    <div class="form__check-group">
-                        <input type="checkbox" class="filter__input" id="facility-parking">
-                        <label for="facility-parking" class="filter__label">
-                            <span class="form__checkbox-btn"></span>
-                            주차장
-                        </label>
-                    </div>
+                            <div class="form__check-group">
+                                <input type="checkbox" class="filter__input" id="type-hostel">
+                                <label for="type-hostel" class="filter__label">
+                                    <span class="form__checkbox-btn"></span>
+                                    호스텔
+                                </label>
+                            </div>
+                        </li>
+                        <li class="form__group"><span>시설</span>
+                            <div class="form__check-group">
+                                <input type="checkbox" class="filter__input" id="facility-parking">
+                                <label for="facility-parking" class="filter__label">
+                                    <span class="form__checkbox-btn"></span>
+                                    주차장
+                                </label>
+                            </div>
 
-                    <div class="form__check-group">
-                        <input type="checkbox" class="filter__input" id="facility-restaurant">
-                        <label for="facility-restaurant" class="filter__label">
-                            <span class="form__checkbox-btn"></span>
-                            레스토랑
-                        </label>
-                    </div>
+                            <div class="form__check-group">
+                                <input type="checkbox" class="filter__input" id="facility-restaurant">
+                                <label for="facility-restaurant" class="filter__label">
+                                    <span class="form__checkbox-btn"></span>
+                                    레스토랑
+                                </label>
+                            </div>
 
-                    <div class="form__check-group">
-                        <input type="checkbox" class="filter__input" id="facility-pet">
-                        <label for="facility-pet" class="filter__label">
-                            <span class="form__checkbox-btn"></span>
-                            반려동물 허용
-                        </label>
-                    </div>
+                            <div class="form__check-group">
+                                <input type="checkbox" class="filter__input" id="facility-pet">
+                                <label for="facility-pet" class="filter__label">
+                                    <span class="form__checkbox-btn"></span>
+                                    반려동물 허용
+                                </label>
+                            </div>
 
-                    <div class="form__check-group">
-                        <input type="checkbox" class="filter__input" id="facility-roomservice">
-                        <label for="facility-roomservice" class="filter__label">
-                            <span class="form__checkbox-btn"></span>
-                            룸서비스
-                        </label>
-                    </div>
+                            <div class="form__check-group">
+                                <input type="checkbox" class="filter__input" id="facility-roomservice">
+                                <label for="facility-roomservice" class="filter__label">
+                                    <span class="form__checkbox-btn"></span>
+                                    룸서비스
+                                </label>
+                            </div>
 
-                    <div class="form__check-group">
-                        <input type="checkbox" class="filter__input" id="facility-fitness">
-                        <label for="facility-fitness" class="filter__label">
-                            <span class="form__checkbox-btn"></span>
-                            피트니스 센터
-                        </label>
-                    </div>
+                            <div class="form__check-group">
+                                <input type="checkbox" class="filter__input" id="facility-fitness">
+                                <label for="facility-fitness" class="filter__label">
+                                    <span class="form__checkbox-btn"></span>
+                                    피트니스 센터
+                                </label>
+                            </div>
 
-                    <div class="form__check-group">
-                        <input type="checkbox" class="filter__input" id="facility-nonsmoking">
-                        <label for="facility-nonsmoking" class="filter__label">
-                            <span class="form__checkbox-btn"></span>
-                            금연 객실
-                        </label>
-                    </div>
+                            <div class="form__check-group">
+                                <input type="checkbox" class="filter__input" id="facility-nonsmoking">
+                                <label for="facility-nonsmoking" class="filter__label">
+                                    <span class="form__checkbox-btn"></span>
+                                    금연 객실
+                                </label>
+                            </div>
 
-                    <div class="form__check-group">
-                        <input type="checkbox" class="filter__input" id="facility-spa">
-                        <label for=facility-spa class="filter__label">
-                            <span class="form__checkbox-btn"></span>
-                            스파
-                        </label>
-                    </div>
-                </li>
-                <li class="form__group"><span>객실 시설</span>
-                    <div class="form__check-group">
-                        <input type="checkbox" class="filter__input" id="room-kitchen">
-                        <label for="room-kitchen" class="filter__label">
-                            <span class="form__checkbox-btn"></span>
-                            주방
-                        </label>
-                    </div>
+                            <div class="form__check-group">
+                                <input type="checkbox" class="filter__input" id="facility-spa">
+                                <label for=facility-spa class="filter__label">
+                                    <span class="form__checkbox-btn"></span>
+                                    스파
+                                </label>
+                            </div>
+                        </li>
+                        <li class="form__group"><span>객실 시설</span>
+                            <div class="form__check-group">
+                                <input type="checkbox" class="filter__input" id="room-kitchen">
+                                <label for="room-kitchen" class="filter__label">
+                                    <span class="form__checkbox-btn"></span>
+                                    주방
+                                </label>
+                            </div>
 
-                    <div class="form__check-group">
-                        <input type="checkbox" class="filter__input" id="room-bathtub">
-                        <label for="room-bathtub" class="filter__label">
-                            <span class="form__checkbox-btn"></span>
-                            욕조
-                        </label>
-                    </div>
+                            <div class="form__check-group">
+                                <input type="checkbox" class="filter__input" id="room-bathtub">
+                                <label for="room-bathtub" class="filter__label">
+                                    <span class="form__checkbox-btn"></span>
+                                    욕조
+                                </label>
+                            </div>
 
-                    <div class="form__check-group">
-                        <input type="checkbox" class="filter__input" id="room-terrace">
-                        <label for="room-terrace" class="filter__label">
-                            <span class="form__checkbox-btn"></span>
-                            테라스
-                        </label>
-                    </div>
+                            <div class="form__check-group">
+                                <input type="checkbox" class="filter__input" id="room-terrace">
+                                <label for="room-terrace" class="filter__label">
+                                    <span class="form__checkbox-btn"></span>
+                                    테라스
+                                </label>
+                            </div>
 
-                    <div class="form__check-group">
-                        <input type="checkbox" class="filter__input" id="room-laundry">
-                        <label for="room-laundry" class="filter__label">
-                            <span class="form__checkbox-btn"></span>
-                            세탁기
-                        </label>
-                    </div>
+                            <div class="form__check-group">
+                                <input type="checkbox" class="filter__input" id="room-laundry">
+                                <label for="room-laundry" class="filter__label">
+                                    <span class="form__checkbox-btn"></span>
+                                    세탁기
+                                </label>
+                            </div>
 
-                    <div class="form__check-group">
-                        <input type="checkbox" class="filter__input" id="room-ocean">
-                        <label for="room-ocean" class="filter__label">
-                            <span class="form__checkbox-btn"></span>
-                            바다 전망
-                        </label>
-                    </div>
-                </li>
-                <li></li>
-            </ul>
-        </section>
+                            <div class="form__check-group">
+                                <input type="checkbox" class="filter__input" id="room-ocean">
+                                <label for="room-ocean" class="filter__label">
+                                    <span class="form__checkbox-btn"></span>
+                                    바다 전망
+                                </label>
+                            </div>
+                        </li>
+                        <li></li>
+                    </ul>
+                </section>
+            </div>
 
-        <div id="breadcrumbs">
-            <a href="index.html">Home</a>
-            <a>국내 숙소</a>
-            <a>서울</a>
+            <div class="main--right">
+                <div id="breadcrumbs">
+                    <a href="index.html">Home</a>
+                    <a>국내 숙소</a>
+                    <a>서울</a>
+                </div>
+
+                <section id="list">
+                    <div class="list-top">
+                        <h2 class="list__title">서울</h2>
+                        <div class="sort">
+                            정렬<span>▾</span>
+                            <div class="sort-box">
+                                <ul class="sort__list">
+                                    <li><a href="#">이름</a></li>
+                                    <li><a href="#">낮은가격</a></li>
+                                    <li><a href="#">높은가격</a></li>
+                                    <li><a href="#">프로모션</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="hotel__list-box">
+                        <div class="hotel__list">
+                            <div class="favorite">
+                                <svg class="favorite__icon">
+                                    <use xlink:href="image/sprite.svg#icon-favorite_outline"></use>
+                                    
+                                </svg>
+                            </div>
+                            <section class="lazy slider" data-sizes="50vw">
+                                <div>
+                                    
+                                <div class="img-box">
+                                    
+                                    <img src="image/gladgangnam.jpg">
+                                </div>
+                                </div>
+                                <div>
+                                <div class="img-box">
+                                    <img src="image/hotelroom1.jpg">
+                                </div>
+                                </div>
+                                <div>
+                                <div class="img-box">
+                                    <img src="image/hotelroom2.jpg">
+                                </div>
+                                </div>
+                                <div>
+                                    <div class="img-box">
+                                    <img src="image/bath.jpg">
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="img-box">
+                                    <img src="image/lobby.jpg">
+                                    </div>
+                                </div>
+                            </section>
+                            <div class="hotel__content-box">
+                                <div class="hotel__content--t">
+                                    <div class="hotel__info">
+                                        <a class="hotel__location">
+                                            <span>서울 강남</span>
+                                        </a>
+                                        <a class="hotel__name">
+                                            글래드 라이브 강남
+                                        </a>
+                                        <div class="hotel__condition">
+                                            <span>디럭스 더블</span>
+                                            <span>·</span>
+                                            <span>더블배드</span>
+                                            <span>·</span>
+                                            <span>최대 2명</span>
+                                        </div>
+                                        <div class="hotel__sticker">
+                                            <span>무료취소</span>
+                                            <span>현장결제 가능</span>
+                                        </div>
+                                    </div>
+                                    <div class="hotel__score-box">
+                                        <div class="hotel__review">
+                                            <span class="review-rate">아주좋음</span>
+                                            <span class="review-count">267개 후기</span>
+                                        </div>
+                                        <div class="hotel__score">
+                                            <span>4.3</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="hotel__content--b">
+                                    <div class="hotel__price-box">
+                                        <span class="before-price">160,000원</span>
+                                        <span class="current-price">80,000원</span>
+                                    </div>
+                                    <div class="hotel__price-discount">
+                                        <span></span>
+                                    </div>
+                                    <div class="hotel__booking">
+                                        
+                                        <button class="booking-button">
+                                            <a href="sub2.html">예약가능 옵션 보기</a>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hotel__list">
+                            <div class="favorite">
+                                <svg class="favorite__icon">
+                                    <use xlink:href="image/sprite.svg#icon-favorite_outline"></use>
+                                    
+                                </svg>
+                            </div>
+                            <section class="lazy slider" data-sizes="50vw">
+                                <div>
+                                    
+                                <div class="img-box">
+                                    
+                                    <img src="image/gladgangnam.jpg">
+                                </div>
+                                </div>
+                                <div>
+                                <div class="img-box">
+                                    <img src="image/hotelroom1.jpg">
+                                </div>
+                                </div>
+                                <div>
+                                <div class="img-box">
+                                    <img src="image/hotelroom2.jpg">
+                                </div>
+                                </div>
+                                <div>
+                                    <div class="img-box">
+                                    <img src="image/bath.jpg">
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="img-box">
+                                    <img src="image/lobby.jpg">
+                                    </div>
+                                </div>
+                            </section>
+                            <div class="hotel__content-box">
+                                <div class="hotel__content--t">
+                                    <div class="hotel__info">
+                                        <a class="hotel__location">
+                                            <span>서울 강남</span>
+                                        </a>
+                                        <a class="hotel__name">
+                                            글래드 라이브 강남
+                                        </a>
+                                        <div class="hotel__condition">
+                                            <span>디럭스 더블</span>
+                                            <span>·</span>
+                                            <span>더블배드</span>
+                                            <span>·</span>
+                                            <span>최대 2명</span>
+                                        </div>
+                                        <div class="hotel__sticker">
+                                            <span>무료취소</span>
+                                            <span>현장결제 가능</span>
+                                        </div>
+                                    </div>
+                                    <div class="hotel__score-box">
+                                        <div class="hotel__review">
+                                            <span class="review-rate">아주좋음</span>
+                                            <span class="review-count">267개 후기</span>
+                                        </div>
+                                        <div class="hotel__score">
+                                            <span>4.3</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="hotel__content--b">
+                                    <div class="hotel__price-box">
+                                        <span class="before-price">160,000원</span>
+                                        <span class="current-price">80,000원</span>
+                                    </div>
+                                    <div class="hotel__price-discount">
+                                        <span></span>
+                                    </div>
+                                    <div class="hotel__booking">
+                                        
+                                        <button class="booking-button">
+                                            <a href="sub2.html">예약가능 옵션 보기</a>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hotel__list">
+                            <div class="favorite">
+                                <svg class="favorite__icon">
+                                    <use xlink:href="image/sprite.svg#icon-favorite_outline"></use>
+                                    
+                                </svg>
+                            </div>
+                            <section class="lazy slider" data-sizes="50vw">
+                                <div>
+                                    
+                                <div class="img-box">
+                                    <img src="image/gladgangnam.jpg">
+                                </div>
+                                </div>
+                                <div>
+                                <div class="img-box">
+                                    <img src="image/hotelroom1.jpg">
+                                </div>
+                                </div>
+                                <div>
+                                <div class="img-box">
+                                    <img src="image/hotelroom2.jpg">
+                                </div>
+                                </div>
+                                <div>
+                                    <div class="img-box">
+                                    <img src="image/bath.jpg">
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="img-box">
+                                    <img src="image/lobby.jpg">
+                                    </div>
+                                </div>
+                            </section>
+                            <div class="hotel__content-box">
+                                <div class="hotel__content--t">
+                                    <div class="hotel__info">
+                                        <a class="hotel__location">
+                                            <span>서울 강남</span>
+                                        </a>
+                                        <a class="hotel__name">
+                                            글래드 라이브 강남
+                                        </a>
+                                        <div class="hotel__condition">
+                                            <span>디럭스 더블</span>
+                                            <span>·</span>
+                                            <span>더블배드</span>
+                                            <span>·</span>
+                                            <span>최대 2명</span>
+                                        </div>
+                                        <div class="hotel__sticker">
+                                            <span>무료취소</span>
+                                            <span>현장결제 가능</span>
+                                        </div>
+                                    </div>
+                                    <div class="hotel__score-box">
+                                        <div class="hotel__review">
+                                            <span class="review-rate">아주좋음</span>
+                                            <span class="review-count">267개 후기</span>
+                                        </div>
+                                        <div class="hotel__score">
+                                            <span>4.3</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="hotel__content--b">
+                                    <div class="hotel__price-box">
+                                        <span class="before-price">160,000원</span>
+                                        <span class="current-price">80,000원</span>
+                                    </div>
+                                    <div class="hotel__price-discount">
+                                        <span></span>
+                                    </div>
+                                    <div class="hotel__booking">
+                                        
+                                        <button class="booking-button">
+                                            <a href="sub2.html">예약가능 옵션 보기</a>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hotel__list">
+                            <div class="favorite">
+                                <svg class="favorite__icon">
+                                    <use xlink:href="image/sprite.svg#icon-favorite_outline"></use>
+                                    
+                                </svg>
+                            </div>
+                            <section class="lazy slider" data-sizes="50vw">
+                                <div>
+                                <div class="img-box">
+                                    <img src="image/gladgangnam.jpg">
+                                </div>
+                                </div>
+                                <div>
+                                <div class="img-box">
+                                    <img src="image/hotelroom1.jpg">
+                                </div>
+                                </div>
+                                <div>
+                                <div class="img-box">
+                                    <img src="image/hotelroom2.jpg">
+                                </div>
+                                </div>
+                                <div>
+                                    <div class="img-box">
+                                    <img src="image/bath.jpg">
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="img-box">
+                                    <img src="image/lobby.jpg">
+                                    </div>
+                                </div>
+                            </section>
+                            <div class="hotel__content-box">
+                                <div class="hotel__content--t">
+                                    <div class="hotel__info">
+                                        <a class="hotel__location">
+                                            <span>서울 강남</span>
+                                        </a>
+                                        <a class="hotel__name">
+                                            글래드 라이브 강남
+                                        </a>
+                                        <div class="hotel__condition">
+                                            <span>디럭스 더블</span>
+                                            <span>·</span>
+                                            <span>더블배드</span>
+                                            <span>·</span>
+                                            <span>최대 2명</span>
+                                        </div>
+                                        <div class="hotel__sticker">
+                                            <span>무료취소</span>
+                                            <span>현장결제 가능</span>
+                                        </div>
+                                    </div>
+                                    <div class="hotel__score-box">
+                                        <div class="hotel__review">
+                                            <span class="review-rate">아주좋음</span>
+                                            <span class="review-count">267개 후기</span>
+                                        </div>
+                                        <div class="hotel__score">
+                                            <span>4.3</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="hotel__content--b">
+                                    <div class="hotel__price-box">
+                                        <span class="before-price">160,000원</span>
+                                        <span class="current-price">80,000원</span>
+                                    </div>
+                                    <div class="hotel__price-discount">
+                                        <span></span>
+                                    </div>
+                                    <div class="hotel__booking">
+                                        
+                                        <button class="booking-button">
+                                            <a href="sub2.html">예약가능 옵션 보기</a>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hotel__list">
+                            <div class="favorite">
+                                <svg class="favorite__icon">
+                                    <use xlink:href="image/sprite.svg#icon-favorite_outline"></use>
+                                    
+                                </svg>
+                            </div>
+                            <section class="lazy slider" data-sizes="50vw">
+                                <div>
+                                <div class="img-box">
+                                    <img src="image/gladgangnam.jpg">
+                                </div>
+                                </div>
+                                <div>
+                                <div class="img-box">
+                                    <img src="image/hotelroom1.jpg">
+                                </div>
+                                </div>
+                                <div>
+                                <div class="img-box">
+                                    <img src="image/hotelroom2.jpg">
+                                </div>
+                                </div>
+                                <div>
+                                    <div class="img-box">
+                                    <img src="image/bath.jpg">
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="img-box">
+                                    <img src="image/lobby.jpg">
+                                    </div>
+                                </div>
+                            </section>
+                            <div class="hotel__content-box">
+                                <div class="hotel__content--t">
+                                    <div class="hotel__info">
+                                        <a class="hotel__location">
+                                            <span>서울 강남</span>
+                                        </a>
+                                        <a class="hotel__name">
+                                            글래드 라이브 강남
+                                        </a>
+                                        <div class="hotel__condition">
+                                            <span>디럭스 더블</span>
+                                            <span>·</span>
+                                            <span>더블배드</span>
+                                            <span>·</span>
+                                            <span>최대 2명</span>
+                                        </div>
+                                        <div class="hotel__sticker">
+                                            <span>무료취소</span>
+                                            <span>현장결제 가능</span>
+                                        </div>
+                                    </div>
+                                    <div class="hotel__score-box">
+                                        <div class="hotel__review">
+                                            <span class="review-rate">아주좋음</span>
+                                            <span class="review-count">267개 후기</span>
+                                        </div>
+                                        <div class="hotel__score">
+                                            <span>4.3</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="hotel__content--b">
+                                    <div class="hotel__price-box">
+                                        <span class="before-price">160,000원</span>
+                                        <span class="current-price">80,000원</span>
+                                    </div>
+                                    <div class="hotel__price-discount">
+                                        <span></span>
+                                    </div>
+                                    <div class="hotel__booking">
+                                        
+                                        <button class="booking-button">
+                                            <a href="sub2.html">예약가능 옵션 보기</a>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hotel__list">
+                            <div class="favorite">
+                                <svg class="favorite__icon">
+                                    <use xlink:href="image/sprite.svg#icon-favorite_outline"></use>
+                                    
+                                </svg>
+                            </div>
+                            <section class="lazy slider" data-sizes="50vw">
+                                <div>
+                                <div class="img-box">
+                                    <img src="image/gladgangnam.jpg">
+                                </div>
+                                </div>
+                                <div>
+                                <div class="img-box">
+                                    <img src="image/hotelroom1.jpg">
+                                </div>
+                                </div>
+                                <div>
+                                <div class="img-box">
+                                    <img src="image/hotelroom2.jpg">
+                                </div>
+                                </div>
+                                <div>
+                                    <div class="img-box">
+                                    <img src="image/bath.jpg">
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="img-box">
+                                    <img src="image/lobby.jpg">
+                                    </div>
+                                </div>
+                            </section>
+                            <div class="hotel__content-box">
+                                <div class="hotel__content--t">
+                                    <div class="hotel__info">
+                                        <a class="hotel__location">
+                                            <span>서울 강남</span>
+                                        </a>
+                                        <a class="hotel__name">
+                                            글래드 라이브 강남
+                                        </a>
+                                        <div class="hotel__condition">
+                                            <span>디럭스 더블</span>
+                                            <span>·</span>
+                                            <span>더블배드</span>
+                                            <span>·</span>
+                                            <span>최대 2명</span>
+                                        </div>
+                                        <div class="hotel__sticker">
+                                            <span>무료취소</span>
+                                            <span>현장결제 가능</span>
+                                        </div>
+                                    </div>
+                                    <div class="hotel__score-box">
+                                        <div class="hotel__review">
+                                            <span class="review-rate">아주좋음</span>
+                                            <span class="review-count">267개 후기</span>
+                                        </div>
+                                        <div class="hotel__score">
+                                            <span>4.3</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="hotel__content--b">
+                                    <div class="hotel__price-box">
+                                        <span class="before-price">160,000원</span>
+                                        <span class="current-price">80,000원</span>
+                                    </div>
+                                    <div class="hotel__price-discount">
+                                        <span></span>
+                                    </div>
+                                    <div class="hotel__booking">
+                                        
+                                        <button class="booking-button">
+                                            <a href="sub2.html">예약가능 옵션 보기</a>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hotel__list">
+                            <div class="favorite">
+                                <svg class="favorite__icon">
+                                    <use xlink:href="image/sprite.svg#icon-favorite_outline"></use>
+                                    
+                                </svg>
+                            </div>
+                            <section class="lazy slider" data-sizes="50vw">
+                                <div>
+                                <div class="img-box">
+                                    <img src="image/gladgangnam.jpg">
+                                </div>
+                                </div>
+                                <div>
+                                <div class="img-box">
+                                    <img src="image/hotelroom1.jpg">
+                                </div>
+                                </div>
+                                <div>
+                                <div class="img-box">
+                                    <img src="image/hotelroom2.jpg">
+                                </div>
+                                </div>
+                                <div>
+                                    <div class="img-box">
+                                    <img src="image/bath.jpg">
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="img-box">
+                                    <img src="image/lobby.jpg">
+                                    </div>
+                                </div>
+                            </section>
+                            <div class="hotel__content-box">
+                                <div class="hotel__content--t">
+                                    <div class="hotel__info">
+                                        <a class="hotel__location">
+                                            <span>서울 강남</span>
+                                        </a>
+                                        <a class="hotel__name">
+                                            글래드 라이브 강남
+                                        </a>
+                                        <div class="hotel__condition">
+                                            <span>디럭스 더블</span>
+                                            <span>·</span>
+                                            <span>더블배드</span>
+                                            <span>·</span>
+                                            <span>최대 2명</span>
+                                        </div>
+                                        <div class="hotel__sticker">
+                                            <span>무료취소</span>
+                                            <span>현장결제 가능</span>
+                                        </div>
+                                    </div>
+                                    <div class="hotel__score-box">
+                                        <div class="hotel__review">
+                                            <span class="review-rate">아주좋음</span>
+                                            <span class="review-count">267개 후기</span>
+                                        </div>
+                                        <div class="hotel__score">
+                                            <span>4.3</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="hotel__content--b">
+                                    <div class="hotel__price-box">
+                                        <span class="before-price">160,000원</span>
+                                        <span class="current-price">80,000원</span>
+                                    </div>
+                                    <div class="hotel__price-discount">
+                                        <span></span>
+                                    </div>
+                                    <div class="hotel__booking">
+                                        
+                                        <button class="booking-button">
+                                            <a href="sub2.html">예약가능 옵션 보기</a>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hotel__list">
+                            <div class="favorite">
+                                <svg class="favorite__icon">
+                                    <use xlink:href="image/sprite.svg#icon-favorite_outline"></use>
+                                    
+                                </svg>
+                            </div>
+                            <section class="lazy slider" data-sizes="50vw">
+                                <div>
+                                <div class="img-box">
+                                    <img src="image/gladgangnam.jpg">
+                                </div>
+                                </div>
+                                <div>
+                                <div class="img-box">
+                                    <img src="image/hotelroom1.jpg">
+                                </div>
+                                </div>
+                                <div>
+                                <div class="img-box">
+                                    <img src="image/hotelroom2.jpg">
+                                </div>
+                                </div>
+                                <div>
+                                    <div class="img-box">
+                                    <img src="image/bath.jpg">
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="img-box">
+                                    <img src="image/lobby.jpg">
+                                    </div>
+                                </div>
+                            </section>
+                            <div class="hotel__content-box">
+                                <div class="hotel__content--t">
+                                    <div class="hotel__info">
+                                        <a class="hotel__location">
+                                            <span>서울 강남</span>
+                                        </a>
+                                        <a class="hotel__name">
+                                            글래드 라이브 강남
+                                        </a>
+                                        <div class="hotel__condition">
+                                            <span>디럭스 더블</span>
+                                            <span>·</span>
+                                            <span>더블배드</span>
+                                            <span>·</span>
+                                            <span>최대 2명</span>
+                                        </div>
+                                        <div class="hotel__sticker">
+                                            <span>무료취소</span>
+                                            <span>현장결제 가능</span>
+                                        </div>
+                                    </div>
+                                    <div class="hotel__score-box">
+                                        <div class="hotel__review">
+                                            <span class="review-rate">아주좋음</span>
+                                            <span class="review-count">267개 후기</span>
+                                        </div>
+                                        <div class="hotel__score">
+                                            <span>4.3</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="hotel__content--b">
+                                    <div class="hotel__price-box">
+                                        <span class="before-price">160,000원</span>
+                                        <span class="current-price">80,000원</span>
+                                    </div>
+                                    <div class="hotel__price-discount">
+                                        <span></span>
+                                    </div>
+                                    <div class="hotel__booking">
+                                        
+                                        <button class="booking-button">
+                                            <a href="sub2.html">예약가능 옵션 보기</a>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hotel__list">
+                            <div class="favorite">
+                                <svg class="favorite__icon">
+                                    <use xlink:href="image/sprite.svg#icon-favorite_outline"></use>
+                                    
+                                </svg>
+                            </div>
+                            <section class="lazy slider" data-sizes="50vw">
+                                <div>
+                                <div class="img-box">
+                                    <img src="image/gladgangnam.jpg">
+                                </div>
+                                </div>
+                                <div>
+                                <div class="img-box">
+                                    <img src="image/hotelroom1.jpg">
+                                </div>
+                                </div>
+                                <div>
+                                <div class="img-box">
+                                    <img src="image/hotelroom2.jpg">
+                                </div>
+                                </div>
+                                <div>
+                                    <div class="img-box">
+                                    <img src="image/bath.jpg">
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="img-box">
+                                    <img src="image/lobby.jpg">
+                                    </div>
+                                </div>
+                            </section>
+                            <div class="hotel__content-box">
+                                <div class="hotel__content--t">
+                                    <div class="hotel__info">
+                                        <a class="hotel__location">
+                                            <span>서울 강남</span>
+                                        </a>
+                                        <a class="hotel__name">
+                                            글래드 라이브 강남
+                                        </a>
+                                        <div class="hotel__condition">
+                                            <span>디럭스 더블</span>
+                                            <span>·</span>
+                                            <span>더블배드</span>
+                                            <span>·</span>
+                                            <span>최대 2명</span>
+                                        </div>
+                                        <div class="hotel__sticker">
+                                            <span>무료취소</span>
+                                            <span>현장결제 가능</span>
+                                        </div>
+                                    </div>
+                                    <div class="hotel__score-box">
+                                        <div class="hotel__review">
+                                            <span class="review-rate">아주좋음</span>
+                                            <span class="review-count">267개 후기</span>
+                                        </div>
+                                        <div class="hotel__score">
+                                            <span>4.3</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="hotel__content--b">
+                                    <div class="hotel__price-box">
+                                        <span class="before-price">160,000원</span>
+                                        <span class="current-price">80,000원</span>
+                                    </div>
+                                    <div class="hotel__price-discount">
+                                        <span></span>
+                                    </div>
+                                    <div class="hotel__booking">
+                                        
+                                        <button class="booking-button">
+                                            <a href="sub2.html">예약가능 옵션 보기</a>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hotel__list">
+                            <div class="favorite">
+                                <svg class="favorite__icon">
+                                    <use xlink:href="image/sprite.svg#icon-favorite_outline"></use>
+                                    
+                                </svg>
+                            </div>
+                            <section class="lazy slider" data-sizes="50vw">
+                                <div>
+                                <div class="img-box">
+                                    <img src="image/gladgangnam.jpg">
+                                </div>
+                                </div>
+                                <div>
+                                <div class="img-box">
+                                    <img src="image/hotelroom1.jpg">
+                                </div>
+                                </div>
+                                <div>
+                                <div class="img-box">
+                                    <img src="image/hotelroom2.jpg">
+                                </div>
+                                </div>
+                                <div>
+                                    <div class="img-box">
+                                    <img src="image/bath.jpg">
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="img-box">
+                                    <img src="image/lobby.jpg">
+                                    </div>
+                                </div>
+                            </section>
+                            <div class="hotel__content-box">
+                                <div class="hotel__content--t">
+                                    <div class="hotel__info">
+                                        <a class="hotel__location">
+                                            <span>서울 강남</span>
+                                        </a>
+                                        <a class="hotel__name">
+                                            글래드 라이브 강남
+                                        </a>
+                                        <div class="hotel__condition">
+                                            <span>디럭스 더블</span>
+                                            <span>·</span>
+                                            <span>더블배드</span>
+                                            <span>·</span>
+                                            <span>최대 2명</span>
+                                        </div>
+                                        <div class="hotel__sticker">
+                                            <span>무료취소</span>
+                                            <span>현장결제 가능</span>
+                                        </div>
+                                    </div>
+                                    <div class="hotel__score-box">
+                                        <div class="hotel__review">
+                                            <span class="review-rate">아주좋음</span>
+                                            <span class="review-count">267개 후기</span>
+                                        </div>
+                                        <div class="hotel__score">
+                                            <span>4.3</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="hotel__content--b">
+                                    <div class="hotel__price-box">
+                                        <span class="before-price">160,000원</span>
+                                        <span class="current-price">80,000원</span>
+                                    </div>
+                                    <div class="hotel__price-discount">
+                                        <span></span>
+                                    </div>
+                                    <div class="hotel__booking">
+                                        
+                                        <button class="booking-button">
+                                            <a href="sub2.html">예약가능 옵션 보기</a>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hotel__list">
+                            <div class="favorite">
+                                <svg class="favorite__icon">
+                                    <use xlink:href="image/sprite.svg#icon-favorite_outline"></use>
+                                    
+                                </svg>
+                            </div>
+                            <section class="lazy slider" data-sizes="50vw">
+                                <div>
+                                <div class="img-box">
+                                    <img src="image/gladgangnam.jpg">
+                                </div>
+                                </div>
+                                <div>
+                                <div class="img-box">
+                                    <img src="image/hotelroom1.jpg">
+                                </div>
+                                </div>
+                                <div>
+                                <div class="img-box">
+                                    <img src="image/hotelroom2.jpg">
+                                </div>
+                                </div>
+                                <div>
+                                    <div class="img-box">
+                                    <img src="image/bath.jpg">
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="img-box">
+                                    <img src="image/lobby.jpg">
+                                    </div>
+                                </div>
+                            </section>
+                            <div class="hotel__content-box">
+                                <div class="hotel__content--t">
+                                    <div class="hotel__info">
+                                        <a class="hotel__location">
+                                            <span>서울 강남</span>
+                                        </a>
+                                        <a class="hotel__name">
+                                            글래드 라이브 강남
+                                        </a>
+                                        <div class="hotel__condition">
+                                            <span>디럭스 더블</span>
+                                            <span>·</span>
+                                            <span>더블배드</span>
+                                            <span>·</span>
+                                            <span>최대 2명</span>
+                                        </div>
+                                        <div class="hotel__sticker">
+                                            <span>무료취소</span>
+                                            <span>현장결제 가능</span>
+                                        </div>
+                                    </div>
+                                    <div class="hotel__score-box">
+                                        <div class="hotel__review">
+                                            <span class="review-rate">아주좋음</span>
+                                            <span class="review-count">267개 후기</span>
+                                        </div>
+                                        <div class="hotel__score">
+                                            <span>4.3</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="hotel__content--b">
+                                    <div class="hotel__price-box">
+                                        <span class="before-price">160,000원</span>
+                                        <span class="current-price">80,000원</span>
+                                    </div>
+                                    <div class="hotel__price-discount">
+                                        <span></span>
+                                    </div>
+                                    <div class="hotel__booking">
+                                        
+                                        <button class="booking-button">
+                                            <a href="sub2.html">예약가능 옵션 보기</a>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hotel__list">
+                            <div class="favorite">
+                                <svg class="favorite__icon">
+                                    <use xlink:href="image/sprite.svg#icon-favorite_outline"></use>
+                                    
+                                </svg>
+                            </div>
+                            <section class="lazy slider" data-sizes="50vw">
+                                <div>
+                                <div class="img-box">
+                                    <img src="image/gladgangnam.jpg">
+                                </div>
+                                </div>
+                                <div>
+                                <div class="img-box">
+                                    <img src="image/hotelroom1.jpg">
+                                </div>
+                                </div>
+                                <div>
+                                <div class="img-box">
+                                    <img src="image/hotelroom2.jpg">
+                                </div>
+                                </div>
+                                <div>
+                                    <div class="img-box">
+                                    <img src="image/bath.jpg">
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="img-box">
+                                    <img src="image/lobby.jpg">
+                                    </div>
+                                </div>
+                            </section>
+                            <div class="hotel__content-box">
+                                <div class="hotel__content--t">
+                                    <div class="hotel__info">
+                                        <a class="hotel__location">
+                                            <span>서울 강남</span>
+                                        </a>
+                                        <a class="hotel__name">
+                                            글래드 라이브 강남
+                                        </a>
+                                        <div class="hotel__condition">
+                                            <span>디럭스 더블</span>
+                                            <span>·</span>
+                                            <span>더블배드</span>
+                                            <span>·</span>
+                                            <span>최대 2명</span>
+                                        </div>
+                                        <div class="hotel__sticker">
+                                            <span>무료취소</span>
+                                            <span>현장결제 가능</span>
+                                        </div>
+                                    </div>
+                                    <div class="hotel__score-box">
+                                        <div class="hotel__review">
+                                            <span class="review-rate">아주좋음</span>
+                                            <span class="review-count">267개 후기</span>
+                                        </div>
+                                        <div class="hotel__score">
+                                            <span>4.3</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="hotel__content--b">
+                                    <div class="hotel__price-box">
+                                        <span class="before-price">160,000원</span>
+                                        <span class="current-price">80,000원</span>
+                                    </div>
+                                    <div class="hotel__price-discount">
+                                        <span></span>
+                                    </div>
+                                    <div class="hotel__booking">
+                                        
+                                        <button class="booking-button">
+                                            <a href="sub2.html">예약가능 옵션 보기</a>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hotel__list">
+                            <div class="favorite">
+                                <svg class="favorite__icon">
+                                    <use xlink:href="image/sprite.svg#icon-favorite_outline"></use>
+                                    
+                                </svg>
+                            </div>
+                            <section class="lazy slider" data-sizes="50vw">
+                                <div>
+                                <div class="img-box">
+                                    <img src="image/gladgangnam.jpg">
+                                </div>
+                                </div>
+                                <div>
+                                <div class="img-box">
+                                    <img src="image/hotelroom1.jpg">
+                                </div>
+                                </div>
+                                <div>
+                                <div class="img-box">
+                                    <img src="image/hotelroom2.jpg">
+                                </div>
+                                </div>
+                                <div>
+                                    <div class="img-box">
+                                    <img src="image/bath.jpg">
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="img-box">
+                                    <img src="image/lobby.jpg">
+                                    </div>
+                                </div>
+                            </section>
+                            <div class="hotel__content-box">
+                                <div class="hotel__content--t">
+                                    <div class="hotel__info">
+                                        <a class="hotel__location">
+                                            <span>서울 강남</span>
+                                        </a>
+                                        <a class="hotel__name">
+                                            글래드 라이브 강남
+                                        </a>
+                                        <div class="hotel__condition">
+                                            <span>디럭스 더블</span>
+                                            <span>·</span>
+                                            <span>더블배드</span>
+                                            <span>·</span>
+                                            <span>최대 2명</span>
+                                        </div>
+                                        <div class="hotel__sticker">
+                                            <span>무료취소</span>
+                                            <span>현장결제 가능</span>
+                                        </div>
+                                    </div>
+                                    <div class="hotel__score-box">
+                                        <div class="hotel__review">
+                                            <span class="review-rate">아주좋음</span>
+                                            <span class="review-count">267개 후기</span>
+                                        </div>
+                                        <div class="hotel__score">
+                                            <span>4.3</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="hotel__content--b">
+                                    <div class="hotel__price-box">
+                                        <span class="before-price">160,000원</span>
+                                        <span class="current-price">80,000원</span>
+                                    </div>
+                                    <div class="hotel__price-discount">
+                                        <span></span>
+                                    </div>
+                                    <div class="hotel__booking">
+                                        
+                                        <button class="booking-button">
+                                            <a href="sub2.html">예약가능 옵션 보기</a>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pager">
+                        
+                    </div>
+                </section>
+            </div>
         </div>
-
-        
-
-        <section id="list">
-            <div class="list-top">
-                <h2 class="list__title">서울</h2>
-                <div class="sort">
-                    정렬<span>▾</span>
-                    <div class="sort-box">
-                        <ul class="sort__list">
-                            <li><a href="#">이름</a></li>
-                            <li><a href="#">낮은가격</a></li>
-                            <li><a href="#">높은가격</a></li>
-                            <li><a href="#">프로모션</a></li>
-                        </ul>
-                    </div>
-                </div>
-                
-            </div>
-            <div class="hotel__list-box">
-                <div class="hotel__list">
-                    <div class="favorite">
-                        <svg class="favorite__icon">
-                            <use xlink:href="image/sprite.svg#icon-favorite_outline"></use>
-                            
-                        </svg>
-                    </div>
-                    <section class="lazy slider" data-sizes="50vw">
-                        <div>
-                        <div class="img-box">
-                            <img src="image/gladgangnam.jpg">
-                        </div>
-                        </div>
-                        <div>
-                        <div class="img-box">
-                            <img src="image/hotelroom1.jpg">
-                        </div>
-                        </div>
-                        <div>
-                        <div class="img-box">
-                            <img src="image/hotelroom2.jpg">
-                        </div>
-                        </div>
-                        <div>
-                            <div class="img-box">
-                            <img src="image/bath.jpg">
-                            </div>
-                        </div>
-                        <div>
-                            <div class="img-box">
-                            <img src="image/lobby.jpg">
-                            </div>
-                        </div>
-                    </section>
-                    <div class="hotel__content-box">
-                        <div class="hotel__content--t">
-                            <div class="hotel__info">
-                                <a class="hotel__location">
-                                    <span>서울 강남</span>
-                                </a>
-                                <a class="hotel__name">
-                                    글래드 라이브 강남
-                                </a>
-                                <div class="hotel__condition">
-                                    <span>디럭스 더블</span>
-                                    <span>·</span>
-                                    <span>더블배드</span>
-                                    <span>·</span>
-                                    <span>최대 2명</span>
-                                </div>
-                                <div class="hotel__sticker">
-                                    <span>무료취소</span>
-                                    <span>현장결제 가능</span>
-                                </div>
-                            </div>
-                            <div class="hotel__score-box">
-                                <div class="hotel__review">
-                                    <span class="review-rate">아주좋음</span>
-                                    <span class="review-count">267개 후기</span>
-                                </div>
-                                <div class="hotel__score">
-                                    <span>4.3</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="hotel__content--b">
-                            <div class="hotel__price-box">
-                                <span class="before-price">160,000원</span>
-                                <span class="current-price">80,000원</span>
-                            </div>
-                            <div class="hotel__price-discount">
-                                <span></span>
-                            </div>
-                            <div class="hotel__booking">
-                                
-                                <button class="booking-button">
-                                    <a href="sub2.html">예약가능 옵션 보기</a>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="hotel__list">
-                    <div class="favorite">
-                        <svg class="favorite__icon">
-                            <use xlink:href="image/sprite.svg#icon-favorite_outline"></use>
-                            
-                        </svg>
-                    </div>
-                    <section class="lazy slider" data-sizes="50vw">
-                        <div>
-                        <div class="img-box">
-                            <img src="image/gladgangnam.jpg">
-                        </div>
-                        </div>
-                        <div>
-                        <div class="img-box">
-                            <img src="image/hotelroom1.jpg">
-                        </div>
-                        </div>
-                        <div>
-                        <div class="img-box">
-                            <img src="image/hotelroom2.jpg">
-                        </div>
-                        </div>
-                        <div>
-                            <div class="img-box">
-                            <img src="image/bath.jpg">
-                            </div>
-                        </div>
-                        <div>
-                            <div class="img-box">
-                            <img src="image/lobby.jpg">
-                            </div>
-                        </div>
-                    </section>
-                    <div class="hotel__content-box">
-                        <div class="hotel__content--t">
-                            <div class="hotel__info">
-                                <a class="hotel__location">
-                                    <span>서울 강남</span>
-                                </a>
-                                <a class="hotel__name">
-                                    글래드 라이브 강남
-                                </a>
-                                <div class="hotel__condition">
-                                    <span>디럭스 더블</span>
-                                    <span>·</span>
-                                    <span>더블배드</span>
-                                    <span>·</span>
-                                    <span>최대 2명</span>
-                                </div>
-                                <div class="hotel__sticker">
-                                    <span>무료취소</span>
-                                    <span>현장결제 가능</span>
-                                </div>
-                            </div>
-                            <div class="hotel__score-box">
-                                <div class="hotel__review">
-                                    <span class="review-rate">아주좋음</span>
-                                    <span class="review-count">267개 후기</span>
-                                </div>
-                                <div class="hotel__score">
-                                    <span>4.3</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="hotel__content--b">
-                            <div class="hotel__price-box">
-                                <span class="before-price">160,000원</span>
-                                <span class="current-price">80,000원</span>
-                            </div>
-                            <div class="hotel__price-discount">
-                                <span></span>
-                            </div>
-                            <div class="hotel__booking">
-                                
-                                <button class="booking-button">
-                                    <a href="sub2.html">예약가능 옵션 보기</a>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="hotel__list">
-                    <div class="favorite">
-                        <svg class="favorite__icon">
-                            <use xlink:href="image/sprite.svg#icon-favorite_outline"></use>
-                            
-                        </svg>
-                    </div>
-                    <section class="lazy slider" data-sizes="50vw">
-                        <div>
-                        <div class="img-box">
-                            <img src="image/gladgangnam.jpg">
-                        </div>
-                        </div>
-                        <div>
-                        <div class="img-box">
-                            <img src="image/hotelroom1.jpg">
-                        </div>
-                        </div>
-                        <div>
-                        <div class="img-box">
-                            <img src="image/hotelroom2.jpg">
-                        </div>
-                        </div>
-                        <div>
-                            <div class="img-box">
-                            <img src="image/bath.jpg">
-                            </div>
-                        </div>
-                        <div>
-                            <div class="img-box">
-                            <img src="image/lobby.jpg">
-                            </div>
-                        </div>
-                    </section>
-                    <div class="hotel__content-box">
-                        <div class="hotel__content--t">
-                            <div class="hotel__info">
-                                <a class="hotel__location">
-                                    <span>서울 강남</span>
-                                </a>
-                                <a class="hotel__name">
-                                    글래드 라이브 강남
-                                </a>
-                                <div class="hotel__condition">
-                                    <span>디럭스 더블</span>
-                                    <span>·</span>
-                                    <span>더블배드</span>
-                                    <span>·</span>
-                                    <span>최대 2명</span>
-                                </div>
-                                <div class="hotel__sticker">
-                                    <span>무료취소</span>
-                                    <span>현장결제 가능</span>
-                                </div>
-                            </div>
-                            <div class="hotel__score-box">
-                                <div class="hotel__review">
-                                    <span class="review-rate">아주좋음</span>
-                                    <span class="review-count">267개 후기</span>
-                                </div>
-                                <div class="hotel__score">
-                                    <span>4.3</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="hotel__content--b">
-                            <div class="hotel__price-box">
-                                <span class="before-price">160,000원</span>
-                                <span class="current-price">80,000원</span>
-                            </div>
-                            <div class="hotel__price-discount">
-                                <span></span>
-                            </div>
-                            <div class="hotel__booking">
-                                
-                                <button class="booking-button">
-                                    <a href="sub2.html">예약가능 옵션 보기</a>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="hotel__list">
-                    <div class="favorite">
-                        <svg class="favorite__icon">
-                            <use xlink:href="image/sprite.svg#icon-favorite_outline"></use>
-                            
-                        </svg>
-                    </div>
-                    <section class="lazy slider" data-sizes="50vw">
-                        <div>
-                        <div class="img-box">
-                            <img src="image/gladgangnam.jpg">
-                        </div>
-                        </div>
-                        <div>
-                        <div class="img-box">
-                            <img src="image/hotelroom1.jpg">
-                        </div>
-                        </div>
-                        <div>
-                        <div class="img-box">
-                            <img src="image/hotelroom2.jpg">
-                        </div>
-                        </div>
-                        <div>
-                            <div class="img-box">
-                            <img src="image/bath.jpg">
-                            </div>
-                        </div>
-                        <div>
-                            <div class="img-box">
-                            <img src="image/lobby.jpg">
-                            </div>
-                        </div>
-                    </section>
-                    <div class="hotel__content-box">
-                        <div class="hotel__content--t">
-                            <div class="hotel__info">
-                                <a class="hotel__location">
-                                    <span>서울 강남</span>
-                                </a>
-                                <a class="hotel__name">
-                                    글래드 라이브 강남
-                                </a>
-                                <div class="hotel__condition">
-                                    <span>디럭스 더블</span>
-                                    <span>·</span>
-                                    <span>더블배드</span>
-                                    <span>·</span>
-                                    <span>최대 2명</span>
-                                </div>
-                                <div class="hotel__sticker">
-                                    <span>무료취소</span>
-                                    <span>현장결제 가능</span>
-                                </div>
-                            </div>
-                            <div class="hotel__score-box">
-                                <div class="hotel__review">
-                                    <span class="review-rate">아주좋음</span>
-                                    <span class="review-count">267개 후기</span>
-                                </div>
-                                <div class="hotel__score">
-                                    <span>4.3</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="hotel__content--b">
-                            <div class="hotel__price-box">
-                                <span class="before-price">160,000원</span>
-                                <span class="current-price">80,000원</span>
-                            </div>
-                            <div class="hotel__price-discount">
-                                <span></span>
-                            </div>
-                            <div class="hotel__booking">
-                                
-                                <button class="booking-button">
-                                    <a href="sub2.html">예약가능 옵션 보기</a>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="hotel__list">
-                    <div class="favorite">
-                        <svg class="favorite__icon">
-                            <use xlink:href="image/sprite.svg#icon-favorite_outline"></use>
-                            
-                        </svg>
-                    </div>
-                    <section class="lazy slider" data-sizes="50vw">
-                        <div>
-                        <div class="img-box">
-                            <img src="image/gladgangnam.jpg">
-                        </div>
-                        </div>
-                        <div>
-                        <div class="img-box">
-                            <img src="image/hotelroom1.jpg">
-                        </div>
-                        </div>
-                        <div>
-                        <div class="img-box">
-                            <img src="image/hotelroom2.jpg">
-                        </div>
-                        </div>
-                        <div>
-                            <div class="img-box">
-                            <img src="image/bath.jpg">
-                            </div>
-                        </div>
-                        <div>
-                            <div class="img-box">
-                            <img src="image/lobby.jpg">
-                            </div>
-                        </div>
-                    </section>
-                    <div class="hotel__content-box">
-                        <div class="hotel__content--t">
-                            <div class="hotel__info">
-                                <a class="hotel__location">
-                                    <span>서울 강남</span>
-                                </a>
-                                <a class="hotel__name">
-                                    글래드 라이브 강남
-                                </a>
-                                <div class="hotel__condition">
-                                    <span>디럭스 더블</span>
-                                    <span>·</span>
-                                    <span>더블배드</span>
-                                    <span>·</span>
-                                    <span>최대 2명</span>
-                                </div>
-                                <div class="hotel__sticker">
-                                    <span>무료취소</span>
-                                    <span>현장결제 가능</span>
-                                </div>
-                            </div>
-                            <div class="hotel__score-box">
-                                <div class="hotel__review">
-                                    <span class="review-rate">아주좋음</span>
-                                    <span class="review-count">267개 후기</span>
-                                </div>
-                                <div class="hotel__score">
-                                    <span>4.3</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="hotel__content--b">
-                            <div class="hotel__price-box">
-                                <span class="before-price">160,000원</span>
-                                <span class="current-price">80,000원</span>
-                            </div>
-                            <div class="hotel__price-discount">
-                                <span></span>
-                            </div>
-                            <div class="hotel__booking">
-                                
-                                <button class="booking-button">
-                                    <a href="sub2.html">예약가능 옵션 보기</a>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="hotel__list">
-                    <div class="favorite">
-                        <svg class="favorite__icon">
-                            <use xlink:href="image/sprite.svg#icon-favorite_outline"></use>
-                            
-                        </svg>
-                    </div>
-                    <section class="lazy slider" data-sizes="50vw">
-                        <div>
-                        <div class="img-box">
-                            <img src="image/gladgangnam.jpg">
-                        </div>
-                        </div>
-                        <div>
-                        <div class="img-box">
-                            <img src="image/hotelroom1.jpg">
-                        </div>
-                        </div>
-                        <div>
-                        <div class="img-box">
-                            <img src="image/hotelroom2.jpg">
-                        </div>
-                        </div>
-                        <div>
-                            <div class="img-box">
-                            <img src="image/bath.jpg">
-                            </div>
-                        </div>
-                        <div>
-                            <div class="img-box">
-                            <img src="image/lobby.jpg">
-                            </div>
-                        </div>
-                    </section>
-                    <div class="hotel__content-box">
-                        <div class="hotel__content--t">
-                            <div class="hotel__info">
-                                <a class="hotel__location">
-                                    <span>서울 강남</span>
-                                </a>
-                                <a class="hotel__name">
-                                    글래드 라이브 강남
-                                </a>
-                                <div class="hotel__condition">
-                                    <span>디럭스 더블</span>
-                                    <span>·</span>
-                                    <span>더블배드</span>
-                                    <span>·</span>
-                                    <span>최대 2명</span>
-                                </div>
-                                <div class="hotel__sticker">
-                                    <span>무료취소</span>
-                                    <span>현장결제 가능</span>
-                                </div>
-                            </div>
-                            <div class="hotel__score-box">
-                                <div class="hotel__review">
-                                    <span class="review-rate">아주좋음</span>
-                                    <span class="review-count">267개 후기</span>
-                                </div>
-                                <div class="hotel__score">
-                                    <span>4.3</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="hotel__content--b">
-                            <div class="hotel__price-box">
-                                <span class="before-price">160,000원</span>
-                                <span class="current-price">80,000원</span>
-                            </div>
-                            <div class="hotel__price-discount">
-                                <span></span>
-                            </div>
-                            <div class="hotel__booking">
-                                
-                                <button class="booking-button">
-                                    <a href="sub2.html">예약가능 옵션 보기</a>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="hotel__list">
-                    <div class="favorite">
-                        <svg class="favorite__icon">
-                            <use xlink:href="image/sprite.svg#icon-favorite_outline"></use>
-                            
-                        </svg>
-                    </div>
-                    <section class="lazy slider" data-sizes="50vw">
-                        <div>
-                        <div class="img-box">
-                            <img src="image/gladgangnam.jpg">
-                        </div>
-                        </div>
-                        <div>
-                        <div class="img-box">
-                            <img src="image/hotelroom1.jpg">
-                        </div>
-                        </div>
-                        <div>
-                        <div class="img-box">
-                            <img src="image/hotelroom2.jpg">
-                        </div>
-                        </div>
-                        <div>
-                            <div class="img-box">
-                            <img src="image/bath.jpg">
-                            </div>
-                        </div>
-                        <div>
-                            <div class="img-box">
-                            <img src="image/lobby.jpg">
-                            </div>
-                        </div>
-                    </section>
-                    <div class="hotel__content-box">
-                        <div class="hotel__content--t">
-                            <div class="hotel__info">
-                                <a class="hotel__location">
-                                    <span>서울 강남</span>
-                                </a>
-                                <a class="hotel__name">
-                                    글래드 라이브 강남
-                                </a>
-                                <div class="hotel__condition">
-                                    <span>디럭스 더블</span>
-                                    <span>·</span>
-                                    <span>더블배드</span>
-                                    <span>·</span>
-                                    <span>최대 2명</span>
-                                </div>
-                                <div class="hotel__sticker">
-                                    <span>무료취소</span>
-                                    <span>현장결제 가능</span>
-                                </div>
-                            </div>
-                            <div class="hotel__score-box">
-                                <div class="hotel__review">
-                                    <span class="review-rate">아주좋음</span>
-                                    <span class="review-count">267개 후기</span>
-                                </div>
-                                <div class="hotel__score">
-                                    <span>4.3</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="hotel__content--b">
-                            <div class="hotel__price-box">
-                                <span class="before-price">160,000원</span>
-                                <span class="current-price">80,000원</span>
-                            </div>
-                            <div class="hotel__price-discount">
-                                <span></span>
-                            </div>
-                            <div class="hotel__booking">
-                                
-                                <button class="booking-button">
-                                    <a href="sub2.html">예약가능 옵션 보기</a>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="hotel__list">
-                    <div class="favorite">
-                        <svg class="favorite__icon">
-                            <use xlink:href="image/sprite.svg#icon-favorite_outline"></use>
-                            
-                        </svg>
-                    </div>
-                    <section class="lazy slider" data-sizes="50vw">
-                        <div>
-                        <div class="img-box">
-                            <img src="image/gladgangnam.jpg">
-                        </div>
-                        </div>
-                        <div>
-                        <div class="img-box">
-                            <img src="image/hotelroom1.jpg">
-                        </div>
-                        </div>
-                        <div>
-                        <div class="img-box">
-                            <img src="image/hotelroom2.jpg">
-                        </div>
-                        </div>
-                        <div>
-                            <div class="img-box">
-                            <img src="image/bath.jpg">
-                            </div>
-                        </div>
-                        <div>
-                            <div class="img-box">
-                            <img src="image/lobby.jpg">
-                            </div>
-                        </div>
-                    </section>
-                    <div class="hotel__content-box">
-                        <div class="hotel__content--t">
-                            <div class="hotel__info">
-                                <a class="hotel__location">
-                                    <span>서울 강남</span>
-                                </a>
-                                <a class="hotel__name">
-                                    글래드 라이브 강남
-                                </a>
-                                <div class="hotel__condition">
-                                    <span>디럭스 더블</span>
-                                    <span>·</span>
-                                    <span>더블배드</span>
-                                    <span>·</span>
-                                    <span>최대 2명</span>
-                                </div>
-                                <div class="hotel__sticker">
-                                    <span>무료취소</span>
-                                    <span>현장결제 가능</span>
-                                </div>
-                            </div>
-                            <div class="hotel__score-box">
-                                <div class="hotel__review">
-                                    <span class="review-rate">아주좋음</span>
-                                    <span class="review-count">267개 후기</span>
-                                </div>
-                                <div class="hotel__score">
-                                    <span>4.3</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="hotel__content--b">
-                            <div class="hotel__price-box">
-                                <span class="before-price">160,000원</span>
-                                <span class="current-price">80,000원</span>
-                            </div>
-                            <div class="hotel__price-discount">
-                                <span></span>
-                            </div>
-                            <div class="hotel__booking">
-                                
-                                <button class="booking-button">
-                                    <a href="sub2.html">예약가능 옵션 보기</a>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="hotel__list">
-                    <div class="favorite">
-                        <svg class="favorite__icon">
-                            <use xlink:href="image/sprite.svg#icon-favorite_outline"></use>
-                            
-                        </svg>
-                    </div>
-                    <section class="lazy slider" data-sizes="50vw">
-                        <div>
-                        <div class="img-box">
-                            <img src="image/gladgangnam.jpg">
-                        </div>
-                        </div>
-                        <div>
-                        <div class="img-box">
-                            <img src="image/hotelroom1.jpg">
-                        </div>
-                        </div>
-                        <div>
-                        <div class="img-box">
-                            <img src="image/hotelroom2.jpg">
-                        </div>
-                        </div>
-                        <div>
-                            <div class="img-box">
-                            <img src="image/bath.jpg">
-                            </div>
-                        </div>
-                        <div>
-                            <div class="img-box">
-                            <img src="image/lobby.jpg">
-                            </div>
-                        </div>
-                    </section>
-                    <div class="hotel__content-box">
-                        <div class="hotel__content--t">
-                            <div class="hotel__info">
-                                <a class="hotel__location">
-                                    <span>서울 강남</span>
-                                </a>
-                                <a class="hotel__name">
-                                    글래드 라이브 강남
-                                </a>
-                                <div class="hotel__condition">
-                                    <span>디럭스 더블</span>
-                                    <span>·</span>
-                                    <span>더블배드</span>
-                                    <span>·</span>
-                                    <span>최대 2명</span>
-                                </div>
-                                <div class="hotel__sticker">
-                                    <span>무료취소</span>
-                                    <span>현장결제 가능</span>
-                                </div>
-                            </div>
-                            <div class="hotel__score-box">
-                                <div class="hotel__review">
-                                    <span class="review-rate">아주좋음</span>
-                                    <span class="review-count">267개 후기</span>
-                                </div>
-                                <div class="hotel__score">
-                                    <span>4.3</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="hotel__content--b">
-                            <div class="hotel__price-box">
-                                <span class="before-price">160,000원</span>
-                                <span class="current-price">80,000원</span>
-                            </div>
-                            <div class="hotel__price-discount">
-                                <span></span>
-                            </div>
-                            <div class="hotel__booking">
-                                
-                                <button class="booking-button">
-                                    <a href="sub2.html">예약가능 옵션 보기</a>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="hotel__list">
-                    <div class="favorite">
-                        <svg class="favorite__icon">
-                            <use xlink:href="image/sprite.svg#icon-favorite_outline"></use>
-                            
-                        </svg>
-                    </div>
-                    <section class="lazy slider" data-sizes="50vw">
-                        <div>
-                        <div class="img-box">
-                            <img src="image/gladgangnam.jpg">
-                        </div>
-                        </div>
-                        <div>
-                        <div class="img-box">
-                            <img src="image/hotelroom1.jpg">
-                        </div>
-                        </div>
-                        <div>
-                        <div class="img-box">
-                            <img src="image/hotelroom2.jpg">
-                        </div>
-                        </div>
-                        <div>
-                            <div class="img-box">
-                            <img src="image/bath.jpg">
-                            </div>
-                        </div>
-                        <div>
-                            <div class="img-box">
-                            <img src="image/lobby.jpg">
-                            </div>
-                        </div>
-                    </section>
-                    <div class="hotel__content-box">
-                        <div class="hotel__content--t">
-                            <div class="hotel__info">
-                                <a class="hotel__location">
-                                    <span>서울 강남</span>
-                                </a>
-                                <a class="hotel__name">
-                                    글래드 라이브 강남
-                                </a>
-                                <div class="hotel__condition">
-                                    <span>디럭스 더블</span>
-                                    <span>·</span>
-                                    <span>더블배드</span>
-                                    <span>·</span>
-                                    <span>최대 2명</span>
-                                </div>
-                                <div class="hotel__sticker">
-                                    <span>무료취소</span>
-                                    <span>현장결제 가능</span>
-                                </div>
-                            </div>
-                            <div class="hotel__score-box">
-                                <div class="hotel__review">
-                                    <span class="review-rate">아주좋음</span>
-                                    <span class="review-count">267개 후기</span>
-                                </div>
-                                <div class="hotel__score">
-                                    <span>4.3</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="hotel__content--b">
-                            <div class="hotel__price-box">
-                                <span class="before-price">160,000원</span>
-                                <span class="current-price">80,000원</span>
-                            </div>
-                            <div class="hotel__price-discount">
-                                <span></span>
-                            </div>
-                            <div class="hotel__booking">
-                                
-                                <button class="booking-button">
-                                    <a href="sub2.html">예약가능 옵션 보기</a>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="hotel__list">
-                    <div class="favorite">
-                        <svg class="favorite__icon">
-                            <use xlink:href="image/sprite.svg#icon-favorite_outline"></use>
-                            
-                        </svg>
-                    </div>
-                    <section class="lazy slider" data-sizes="50vw">
-                        <div>
-                        <div class="img-box">
-                            <img src="image/gladgangnam.jpg">
-                        </div>
-                        </div>
-                        <div>
-                        <div class="img-box">
-                            <img src="image/hotelroom1.jpg">
-                        </div>
-                        </div>
-                        <div>
-                        <div class="img-box">
-                            <img src="image/hotelroom2.jpg">
-                        </div>
-                        </div>
-                        <div>
-                            <div class="img-box">
-                            <img src="image/bath.jpg">
-                            </div>
-                        </div>
-                        <div>
-                            <div class="img-box">
-                            <img src="image/lobby.jpg">
-                            </div>
-                        </div>
-                    </section>
-                    <div class="hotel__content-box">
-                        <div class="hotel__content--t">
-                            <div class="hotel__info">
-                                <a class="hotel__location">
-                                    <span>서울 강남</span>
-                                </a>
-                                <a class="hotel__name">
-                                    글래드 라이브 강남
-                                </a>
-                                <div class="hotel__condition">
-                                    <span>디럭스 더블</span>
-                                    <span>·</span>
-                                    <span>더블배드</span>
-                                    <span>·</span>
-                                    <span>최대 2명</span>
-                                </div>
-                                <div class="hotel__sticker">
-                                    <span>무료취소</span>
-                                    <span>현장결제 가능</span>
-                                </div>
-                            </div>
-                            <div class="hotel__score-box">
-                                <div class="hotel__review">
-                                    <span class="review-rate">아주좋음</span>
-                                    <span class="review-count">267개 후기</span>
-                                </div>
-                                <div class="hotel__score">
-                                    <span>4.3</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="hotel__content--b">
-                            <div class="hotel__price-box">
-                                <span class="before-price">160,000원</span>
-                                <span class="current-price">80,000원</span>
-                            </div>
-                            <div class="hotel__price-discount">
-                                <span></span>
-                            </div>
-                            <div class="hotel__booking">
-                                
-                                <button class="booking-button">
-                                    <a href="sub2.html">예약가능 옵션 보기</a>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="hotel__list">
-                    <div class="favorite">
-                        <svg class="favorite__icon">
-                            <use xlink:href="image/sprite.svg#icon-favorite_outline"></use>
-                            
-                        </svg>
-                    </div>
-                    <section class="lazy slider" data-sizes="50vw">
-                        <div>
-                        <div class="img-box">
-                            <img src="image/gladgangnam.jpg">
-                        </div>
-                        </div>
-                        <div>
-                        <div class="img-box">
-                            <img src="image/hotelroom1.jpg">
-                        </div>
-                        </div>
-                        <div>
-                        <div class="img-box">
-                            <img src="image/hotelroom2.jpg">
-                        </div>
-                        </div>
-                        <div>
-                            <div class="img-box">
-                            <img src="image/bath.jpg">
-                            </div>
-                        </div>
-                        <div>
-                            <div class="img-box">
-                            <img src="image/lobby.jpg">
-                            </div>
-                        </div>
-                    </section>
-                    <div class="hotel__content-box">
-                        <div class="hotel__content--t">
-                            <div class="hotel__info">
-                                <a class="hotel__location">
-                                    <span>서울 강남</span>
-                                </a>
-                                <a class="hotel__name">
-                                    글래드 라이브 강남
-                                </a>
-                                <div class="hotel__condition">
-                                    <span>디럭스 더블</span>
-                                    <span>·</span>
-                                    <span>더블배드</span>
-                                    <span>·</span>
-                                    <span>최대 2명</span>
-                                </div>
-                                <div class="hotel__sticker">
-                                    <span>무료취소</span>
-                                    <span>현장결제 가능</span>
-                                </div>
-                            </div>
-                            <div class="hotel__score-box">
-                                <div class="hotel__review">
-                                    <span class="review-rate">아주좋음</span>
-                                    <span class="review-count">267개 후기</span>
-                                </div>
-                                <div class="hotel__score">
-                                    <span>4.3</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="hotel__content--b">
-                            <div class="hotel__price-box">
-                                <span class="before-price">160,000원</span>
-                                <span class="current-price">80,000원</span>
-                            </div>
-                            <div class="hotel__price-discount">
-                                <span></span>
-                            </div>
-                            <div class="hotel__booking">
-                                
-                                <button class="booking-button">
-                                    <a href="sub2.html">예약가능 옵션 보기</a>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="hotel__list">
-                    <div class="favorite">
-                        <svg class="favorite__icon">
-                            <use xlink:href="image/sprite.svg#icon-favorite_outline"></use>
-                            
-                        </svg>
-                    </div>
-                    <section class="lazy slider" data-sizes="50vw">
-                        <div>
-                        <div class="img-box">
-                            <img src="image/gladgangnam.jpg">
-                        </div>
-                        </div>
-                        <div>
-                        <div class="img-box">
-                            <img src="image/hotelroom1.jpg">
-                        </div>
-                        </div>
-                        <div>
-                        <div class="img-box">
-                            <img src="image/hotelroom2.jpg">
-                        </div>
-                        </div>
-                        <div>
-                            <div class="img-box">
-                            <img src="image/bath.jpg">
-                            </div>
-                        </div>
-                        <div>
-                            <div class="img-box">
-                            <img src="image/lobby.jpg">
-                            </div>
-                        </div>
-                    </section>
-                    <div class="hotel__content-box">
-                        <div class="hotel__content--t">
-                            <div class="hotel__info">
-                                <a class="hotel__location">
-                                    <span>서울 강남</span>
-                                </a>
-                                <a class="hotel__name">
-                                    글래드 라이브 강남
-                                </a>
-                                <div class="hotel__condition">
-                                    <span>디럭스 더블</span>
-                                    <span>·</span>
-                                    <span>더블배드</span>
-                                    <span>·</span>
-                                    <span>최대 2명</span>
-                                </div>
-                                <div class="hotel__sticker">
-                                    <span>무료취소</span>
-                                    <span>현장결제 가능</span>
-                                </div>
-                            </div>
-                            <div class="hotel__score-box">
-                                <div class="hotel__review">
-                                    <span class="review-rate">아주좋음</span>
-                                    <span class="review-count">267개 후기</span>
-                                </div>
-                                <div class="hotel__score">
-                                    <span>4.3</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="hotel__content--b">
-                            <div class="hotel__price-box">
-                                <span class="before-price">160,000원</span>
-                                <span class="current-price">80,000원</span>
-                            </div>
-                            <div class="hotel__price-discount">
-                                <span></span>
-                            </div>
-                            <div class="hotel__booking">
-                                
-                                <button class="booking-button">
-                                    <a href="sub2.html">예약가능 옵션 보기</a>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="pager">
-                
-            </div>
-        </section>
-
         <section id="app__banner">
-            <div class="inner">
-                <button class="btn google-btn green-btn">
+            <img src="image/appdownload_banner2.png" alt="">
+                <!--<button class="btn google-btn green-btn">
                     <img src="image/google.png" alt="">
                     <span>Google Play</span>
                 </button>
                 <button class="btn apple-btn green-btn">
                     <img src="image/apple.png" alt="">
                     <span>Apple store</span>
-                </button>
-            </div>
+                </button>-->
         </section>
 
         <footer id="footer">
-            <div class="inner">
                 <div class="footer__top">
                     <div class="footer__logo-box">
-                        <img src="image/darkhotelDelight_logo.png" alt="">
+                        <a href="index.html">
+                            <img src="image/darkhotelDelight_logo.png" alt="">
+                            </a>
                     </div>
                     <ul class="sitemap">
                         <li><span>숙소</span>
@@ -1482,7 +1482,6 @@
                         연락 주시기 바랍니다.
                     </div>
                 </div>
-            </div>
         </footer>
     </div>
 </body>

@@ -1,4 +1,5 @@
 $(function(){
+
     $("#search .search__nav").each(function(){
 
         let allAnchor = $(this).find("a");
@@ -67,12 +68,12 @@ $(function(){
         $(".search__find-box").css({transform: "scale(0)"});
       })
 
-      $(".search__small-descript").focus(function(){
+      $(".search__destination input").focus(function(){
         $(".search__destination-box").css({transform: "scale(1)"});
         //$('.destination__input').focus();
       })
 
-      $(".search__small-descript").blur(function(){
+      $(".search__destination input").blur(function(){
         $(".search__destination-box").css({transform: "scale(0)"});
       })
 
@@ -85,16 +86,26 @@ $(function(){
         $("#ask .ask__background").css({transform: "scale(0)"});
       });
 
-      var sta = 1;
+      var navi = 1;
       $("#menu-box").click(function(){
-        if ( sta === 1) { 
-          $("#navigation").animate({left: 0}, "fast");
-          $(".navigation__background").css({opacity: 1, visibility: "visible", width: "100%"}, 3000);
-          sta = 2;
+        if ( navi == 1 ) { 
+          $("#navigation").animate({left: "0"});
+          $(".navigation__background").css({opacity: 1, visibility: "visible"}, 3000);
+          
+          $("#menu-box span").animate({backgroundColor: "var(--color-primary)"});
+          $("#menu-box span:nth-child(1)").animate({width: "+=8px"});
+          $("#menu-box span:nth-child(3)").animate({width: "+=8px"});
+          $("#menu-box span:nth-child(2)").animate({width: "-=8px"});
+          
+          navi = 2;
         } else {
-          $("#navigation").animate({left: "-100%"}, "fast");
+          $("#navigation").css({left: "-100%"});
           $(".navigation__background").css({opacity: 0, visibility: "hidden"}, 3000);
-          sta = 1;
+          $("#menu-box span").css({"background-color": "currentColor"});
+          $("#menu-box span:nth-child(1)").animate({width: "-=8px"});
+          $("#menu-box span:nth-child(3)").animate({width: "-=8px"});
+          $("#menu-box span:nth-child(2)").animate({width: "+=8px"});
+          navi = 1;
         }
       })
 
@@ -110,13 +121,5 @@ $(function(){
           ul.stop().hide();
           naviBack.stop().fadeOut();
         })
-      })
-
-
-
-
-
-      
-
-     
+      })     
 })

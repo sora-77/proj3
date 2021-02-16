@@ -8,12 +8,21 @@
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/slick.css">    
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.8.18/themes/base/jquery-ui.css" type="text/css" />  
 
-    <script src="js/jquery-3.1.1.min.js"></script>
+
+    <script src="js/jquery-migrate-1.1.1.js"></script>
+
+    <script src="http://code.jquery.com/ui/1.8.18/jquery-ui.min.js"></script>
     <script src="http://code.jquery.com/jquery-migrate-3.0.0.js"></script> 
+    <script src="js/jquery-3.1.1.min.js"></script>
+
     <script src="js/slick.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/slide.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/calendar.js"></script>
+    <script src="js/stepper.js"></script>
+
     <script>
         (function(d) {
           var config = {
@@ -111,7 +120,7 @@
                     <div class="navi__accomodation">
                         <h5 class="navi__title">숙소</h5>
                         <ul class="navi__depth1">
-                            <li class="navi__depth1--list"><a href="#">국내숙소</a>
+                            <li class="navi__depth1--list"><a href="sub1.html">국내숙소</a>
                                 <!--<ul class="navi__depth2">
                                     <li><a href="#">지역</a></li>
                                     <li><a href="#">도시</a></li>
@@ -295,6 +304,30 @@
             <span></span>
             <span></span>
         </div>
+        <div class="mypage-box">
+            <input type="checkbox" class="mypage__checkbox" id="mypage-toggle">
+                <label for="mypage-toggle" class="mypage__button">
+                    <a>마이페이지</a>
+                </label>
+                <ul class="mypage__sub">
+                    <li>
+                        <a href="#">로그인</a>
+                        <img src="" class="mypage__sub--icon">
+                    </li>
+                    <li>
+                        <a href="#">회원가입</a>
+                        <img class="mypage__sub--icon">
+                    </li>
+                    <li>
+                        <a href="#">여행정보</a>
+                        <img class="mypage__sub--icon">
+                    </li>
+                    <li>
+                        <a href="#">문의하기</a>
+                        <img class="mypage__sub--icon">
+                    </li>
+                </ul>
+                </div>  
 
         <header id="header">
             <div class="inner">
@@ -314,32 +347,11 @@
                         </ul>
                     </div>
                     
-                    <input type="checkbox" class="mypage__checkbox" id="mypage-toggle">
-                    <label for="mypage-toggle" class="mypage__button">
-                        <a>마이페이지</a>
-                        <span class="mypage__menu-icon">&nbsp;</span>
-                    </label>
-                    <ul class="mypage__sub">
-                        <li>
-                            <a href="#">로그인</a>
-                            <img src="" class="mypage__sub--icon">
-                        </li>
-                        <li>
-                            <a href="#">회원가입</a>
-                            <img class="mypage__sub--icon">
-                        </li>
-                        <li>
-                            <a href="#">여행정보</a>
-                            <img class="mypage__sub--icon">
-                        </li>
-                        <li>
-                            <a href="#">문의하기</a>
-                            <img class="mypage__sub--icon">
-                        </li>
-                    </ul>
+                    
                 </div>
             </div>
         </header>
+        
         <section id="main">
             <div class="main__background"></div>
         </section>
@@ -356,7 +368,7 @@
                 <div class="search--scroll-down">
                     <div class="search-box__content">
                         <img src="image/logo_small.png" alt="">
-                        <button class="find__button">숙소찾기</button>  
+                        <input class="find__button" placeholder="숙소찾기">
                         <div class="search__find-box">
                             <input type="text" class="find__input" placeholder="숙소찾기">
                             <ul class="find__recent">
@@ -367,11 +379,13 @@
                         </div>
                     </div>
                     <button class="search-btn"></button>
+                    
                 </div>
                 <div class="search--domestic" >
                     <div class="search__destination search__select">
-                        <span class="search__small-title">위치</span>
-                        <button class="search__small-descript">어디로 가세요?</button>
+                        <label class="destination__label" for="where">위치</label>
+                        <input type="text" placeholder="어디로 가세요?" id="where"></input>
+                        
                         <div class="search__destination-box">
                             <input type="text" class="destination__input" placeholder="어디로 가세요?">
                             <ul class="destination__recent">
@@ -382,26 +396,58 @@
                         </div>
 
                     </div>
-                    <div class="search__checkin search__select">
-                        <a href="#">
-                            <span class="search__small-title">체크인</span>
-                            <span class="search__small-descript">1월 23일</span>
-                        </a>
+                    <div class="search__checkin search__select check-in">
+                        <label for="startDate--i" class="date__label">체크인 </label>
+                        <input type="text" id="startDate--i" class="date__input" placeholder="2020.02.23" autocomplete="off">
                     </div>
-                    <div class="search__checkout search__select">
-                        <a href="#">
-                            <span class="search__small-title">체크아웃</span>
-                            <span class="search__small-descript">1월 24일</span>
-                        </a>
+                    <div class="search__checkout search__select check-out">
+                        <label for="endDate--i" class="date__label">체크아웃 </label>
+                        <input type="text" id="endDate--i" class="date__input" placeholder="2020.02.24" autocomplete="off">
                     </div>
-                    <div class="search__guest search__select">
-                        <a href="#">
-                            <span class="search__small-title">인원</span>
-                            <span class="search__small-descript">인원추가</span>
-                        </a>
+                    <div class="search__guest search__select guest">
+                        
+                            <label for="guest" class="guest__label">인원 </label>
+                            <input type="text" id="guest" class="guest__input" placeholder="성인 2명" autocomplete="off">
+                            <div class="guest__select-box">
+                                <ul class="guest__select">
+                                    <li class="adult">
+                                        <label for="adult">성인</label>
+                                        <div class="input-stepper">
+                                            <button class="minus">-</button>
+                                            <input type="text" value="2" id="adult" class="input-box adult__input-box"/>
+                                            <button class="plus">+</button>
+                                          </div>
+                                    </li>
+                                    <li class="child">
+                                        <label for="child">아동</label>
+                                        <div class="input-stepper">
+                                            <button class="minus">-</button>
+                                            <input type="text" value="0" id="child" class="input-box"/>
+                                            <button class="plus">+</button>
+                                          </div>
+                                    </li>
+                                    <li class="infant">
+                                        <label for="infant">유아</label>
+                                        <div class="input-stepper">
+                                            <button class="minus">-</button>
+                                            <input type="text" value="0" id="infant" class="input-box"/>
+                                            <button class="plus">+</button>
+                                          </div>
+                                    </li>
+                                </ul>
+                                <button type="submit" class="accept-button">
+                                    적용하기
+                                </button>
+                            </div>
+                        
                     </div>
                     <div class="search__btn-box">
-                        <button class="btn dark-btn--round">숙소찾기</button>   
+                        <a class="btn-link" href="sub1.html">
+                            <button class="btn dark-btn--round btn-change">숙소찾기</button>
+                            <button class="dark-btn--round btn-change--icon">
+                                <img src="image/search_btn.png" alt="">
+                            </button>
+                        </a>   
                     </div>
                 </div>
             </div>
@@ -412,37 +458,70 @@
                 </div>
                 <div class="search--international" >
                     <div class="search__destination search__select">
-                        <a href="#">
-                            <span class="search__small-title">위치</span>
-                            <input type="text" class="search__small-descript" placeholder="어디로 가세요?"></input>
-                            <div class="search__destination-box">
-                                <input type="text" class="destination__input" placeholder="어디로 가세요?">
-                                <ul class="destination__recent">
-                                    <li><a href="#">멜버른, 호주</a></li>
-                                    <li><a href="#">그레이트오션로드, 빅토리아, 호주</a></li>
+                        <label class="destination__label" for="where--i">위치</label>
+                        <input type="text" placeholder="어디로 가세요?" id="where--i"></input>
+                        
+                        <div class="search__destination-box">
+                            <input type="text" class="destination__input" placeholder="어디로 가세요?">
+                            <ul class="destination__recent">
+                                <li><a href="#">멜버른, 호주</a></li>
+                                <li><a href="#">그레이트오션로드, 빅토리아, 호주</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="search__checkin search__select check-in">
+                        <label for="startDate" class="date__label">체크인 </label>
+                        <input type="text" id="startDate" class="date__input" placeholder="2020.02.23" autocomplete="off">
+                    </div>
+                    <div class="search__checkout search__select check-out">
+                        <label for="endDate" class="date__label">체크아웃 </label>
+                        <input type="text" id="endDate" class="date__input" placeholder="2020.02.24" autocomplete="off">
+                    </div>
+                    <div class="search__guest search__select guest">
+                        
+                            <label for="guest--i" class="guest__label">인원 </label>
+                            <input type="text" id="guest--i" class="guest__input" placeholder="성인 2명" autocomplete="off">
+                            <div class="guest__select-box">
+                                <ul class="guest__select">
+                                    <li class="adult">
+                                        <label for="adult--i">성인</label>
+                                        <div class="input-stepper">
+                                            <button class="minus">-</button>
+                                            <input type="text" value="2" id="adult--i" class="input-box adult__input-box"/>
+                                            <button class="plus">+</button>
+                                          </div>
+                                    </li>
+                                    <li class="child">
+                                        <label for="child--i">아동</label>
+                                        <div class="input-stepper">
+                                            <button class="minus">-</button>
+                                            <input type="text" value="0" id="child--i" class="input-box"/>
+                                            <button class="plus">+</button>
+                                          </div>
+                                    </li>
+                                    <li class="infant">
+                                        <label for="infant--i">유아</label>
+                                        <div class="input-stepper">
+                                            <button class="minus">-</button>
+                                            <input type="text" value="0" id="infant--i" class="input-box"/>
+                                            <button class="plus">+</button>
+                                          </div>
+                                    </li>
                                 </ul>
+                                <button type="submit" class="accept-button">
+                                    적용하기
+                                </button>
                             </div>
-                        </a>
+                        
                     </div>
-                    <div class="search__checkin search__select">
-                        <a href="#">
-                            <span class="search__small-title">체크인</span>
-                            <span class="search__small-descript">2월 23일</span>
-                        </a>
-                    </div>
-                    <div class="search__checkout search__select">
-                        <a href="#">
-                            <span class="search__small-title">체크아웃</span>
-                            <span class="search__small-descript">2월 25일</span>
-                        </a>
-                    </div>
-                    <div class="search__guest search__select">
-                        <a href="#">
-                            <span class="search__small-title">인원</span>
-                            <span class="search__small-descript">인원추가</span>
-                        </a>
-                    </div>
-                    <button class="btn dark-btn--round">숙소찾기</button>  
+                    <div class="search__btn-box">
+                        <a class="btn-link" href="sub1.html">
+                            <button class="btn dark-btn--round btn-change">숙소찾기</button>
+                            <button class="dark-btn--round btn-change--icon">
+                                <img src="image/search_btn.png" alt="">
+                            </button>
+                        </a> 
+                    </div>  
                 </div>
             </div>
             <div class="search__menu-box">
@@ -450,12 +529,11 @@
             </div>
         </section>
         <section id="promotion">
-            <div class="inner">
                 <div class="content-box">
                     <div class="section__title">
                         특별한 가격
                     </div>
-                    <section class="lazy slider" data-sizes="50vw">
+                    <section class="lazy slider">
                         <div>
                           <div class="img-box">
                             <img src="image/hotel-promo.jpg">
@@ -515,10 +593,8 @@
                           </div>
                       </section>
                 </div>
-            </div>
         </section>
         <section id="theme">
-            <div class="inner">
                 <div class="section__title">
                     지금 내가 원하는 테마여행
                 </div>
@@ -602,27 +678,31 @@
                         </div>
                     </div>
                 </section>
-            </div>
         </section>
         <section id="destination">
-            <div class="inner">
+            
                 <article class="city">
-                    <div class="img-box">
-                    <img src="image/jeju.jpg" alt=""></div>
-                    <p>
-                        <span class="city__ko">제주</span>
-                        <span class="city__eng">jeju</span>
-                    </p>
+                    <a>
+                        <div class="img-box">
+                        <img src="image/jeju.jpg" alt=""></div>
+                        <p>
+                            <span class="city__ko">제주</span>
+                            <span class="city__eng">jeju</span>
+                        </p>
+                    </a>
                 </article>
                 <article class="city">
+                    <a href="sub1.html">
                     <div class="img-box">
                     <img src="image/seoul.jpg" alt=""></div>
                     <p>
                         <span class="city__ko">서울</span>
                         <span class="city__eng">Seoul</span>
                     </p>
+                    </a>    
                 </article>
                 <article class="city">
+                    <a>
                     <div class="img-box">
 
                     <img src="image/busan.jpg" alt=""></div>
@@ -630,8 +710,10 @@
                         <span class="city__ko">부산</span>
                         <span class="city__eng">Busan</span>
                     </p>
+                    </a>
                 </article>
                 <article class="city">
+                    <a>
                     <div class="img-box">
 
                     <img src="image/yangyang.jpg" alt=""></div>
@@ -639,8 +721,10 @@
                         <span class="city__ko">양양</span>
                         <span class="city__eng">yangyang</span>
                     </p>
+                    </a>
                 </article>
                 <article class="city">
+                    <a>
                     <div class="img-box">
 
                     <img src="image/suwon.jpg" alt=""></div>
@@ -648,11 +732,13 @@
                         <span class="city__ko">수원</span>
                         <span class="city__eng">Suwon</span>
                     </p>
+                    </a>
                 </article>
-            </div>
+            
         </section>
         <section id="app__banner">
             <div class="inner">
+                <!--
                 <button class="btn google-btn green-btn">
                     <img src="image/google.png" alt="">
                     <span>Google Play</span>
@@ -660,14 +746,15 @@
                 <button class="btn apple-btn green-btn">
                     <img src="image/apple.png" alt="">
                     <span>Apple store</span>
-                </button>
+                </button>-->
             </div>
         </section>
         <footer id="footer">
-            <div class="inner">
                 <div class="footer__top">
                     <div class="footer__logo-box">
+                        <a href="index.html">
                         <img src="image/darkhotelDelight_logo.png" alt="">
+                        </a>
                     </div>
                     <ul class="sitemap">
                         <li><span>숙소</span>
@@ -733,7 +820,6 @@
                         연락 주시기 바랍니다.
                     </div>
                 </div>
-            </div>
         </footer>
     </div>
 </body>

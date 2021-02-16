@@ -230,6 +230,10 @@
                         </div>
                     </div>
                         
+                    <div class="saved">
+                        
+                    </div>
+
                     <div class="form__group">
                         <label for="card-own" class="form__label">카드 소유자 명</label>
                         <input type="text" class="form__input" placeholder="" id="card-own" required>
@@ -271,7 +275,7 @@
                         </div>
                         <div class="agreement">
                             <div class="form__check-group">
-                                <input type="checkbox" class="form__input checkbox-input" id="agree">
+                                <input type="checkbox" class="form__input checkbox-input" id="agree" required>
                                 <label for="agree" class="form__label checkbox-label">
                                     <span class="form__checkbox-btn"></span>
                                     <span class="text__checkbox-label">
@@ -284,7 +288,7 @@
                     </div>
 
                     <div class="form__group">
-                        <button class="pay-btn">동의 및 결제완료</button>
+                        <button class="pay-btn" type="submit"><a href="sub4.html">동의 및 결제완료</a></button>
                     </div>  
         </section>
 
@@ -293,35 +297,39 @@
                 <h2 class="section__title">
                     예약사항
                 </h2>
-                <div class="summary__img">
-                    <img src="image/gravityhotel.jpg" alt="글래드 라이브 예약사항">
-                </div>
-                <div class="summary__text">
-                    <div class="hotel__name">글래드 라이브 강남</div>
-                    <div class="hotel__room">
-                        <div class="hotel__room--name">디럭스 더블룸</div>
-                        <div class="hotel__room--price">
-                            ₩125,000
-                        </div>    
+                <div class="summary__content-box">
+                    <div class="summary__img">
+                        <img src="image/gravityhotel.jpg" alt="글래드 라이브 예약사항">
                     </div>
-                    <div class="hotel__date">2021.02.16 ~ 2021.02.17 / 1박 </div>
-                </div>
-                <div class="summary__total">
-                    <div class="subtotal">
-                        <span class="subtotal__title">예약금액</span>
-                        <span class="subtotal__price">₩125,000</span>
-                    </div>
-                    <div class="tax">
-                        <span class="tax__title">세금</span>
-                        <span class="tax__price">₩12,500</span>
-                    </div>
-                    <div class="discount">
-                        <span class="discount__title">할인금액</span>
-                        <span class="discount__price">- 0</span>
-                    </div>
-                    <div class="grandtotal">
-                        <span class="grandtotal__title">결제금액</span>
-                        <span class="grandtotal__price">₩137,500</span>
+                    <div class="summary__text-box">
+                        <div class="summary__text">
+                            <div class="hotel__name">글래드 라이브 강남</div>
+                            <div class="hotel__room">
+                                <div class="hotel__room--name">디럭스 더블룸</div>
+                                <div class="hotel__room--price">
+                                    ₩125,000
+                                </div>    
+                            </div>
+                            <div class="hotel__date">2021.02.16 ~ 2021.02.17 / 1박 </div>
+                        </div>
+                        <div class="summary__total">
+                            <div class="subtotal">
+                                <span class="subtotal__title">객실금액</span>
+                                <span class="subtotal__price">₩125,000</span>
+                            </div>
+                            <div class="tax">
+                                <span class="tax__title">세금</span>
+                                <span class="tax__price">₩12,500</span>
+                            </div>
+                            <div class="discount">
+                                <span class="discount__title">할인금액</span>
+                                <span class="discount__price">- 0</span>
+                            </div>
+                            <div class="grandtotal">
+                                <span class="grandtotal__title">결제금액</span>
+                                <span class="grandtotal__price">₩137,500</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -329,10 +337,11 @@
         </div>
 
         <footer id="footer">
-            <div class="inner">
                 <div class="footer__top">
                     <div class="footer__logo-box">
-                        <img src="image/darkhotelDelight_logo.png" alt="">
+                        <a href="index.html">
+                            <img src="image/darkhotelDelight_logo.png" alt="">
+                            </a>
                     </div>
                     <ul class="sitemap">
                         <li><span>숙소</span>
@@ -397,7 +406,6 @@
                         연락 주시기 바랍니다.
                     </div>
                 </div>
-            </div>
         </footer>
     </div>
 </body>

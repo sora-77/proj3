@@ -1,0 +1,81 @@
+#complete {
+  padding-top: 4.5rem;
+  padding-bottom: 4.5rem;
+  padding-left: 32rem;
+  padding-right: 32rem;
+  text-align: center;
+  margin-bottom: 8rem;
+}
+
+#complete .complete__message {
+  padding-top: 6rem;
+  margin-bottom: 1.6rem;
+}
+
+#complete .complete__message > svg {
+  width: 13rem;
+  height: 13rem;
+  fill: var(--color-primary);
+}
+#complete .complete__message .message__text {
+  margin-bottom: 2.4rem;
+}
+
+#complete .complete__message .message__text--big {
+  color: var(--color-primary);
+  font-size: var(--large-size);
+  font-weight: 300;
+  margin-bottom: 2.4rem;
+}
+
+#complete .complete__message .message__text svg {
+  width: 2.5rem;
+  height: 2.5rem;
+  fill: currentColor;
+}
+
+#complete .complete__message .message__text p {
+  font-size: 1.5rem;
+  font-family: var(--noto-font);
+  font-weight: 300;
+}
+
+#complete .complete__landing-btn button {
+  background-color: var(--color-primary-light);
+  color: #fff;
+  border-radius: 50px;
+  margin: 0 0.6rem;
+}
+
+#complete .complete__landing-btn button a {
+  display: block;
+  padding: 1.2rem 2rem;
+  font-size: 1.5rem;
+}
+#complete .complete__landing-btn button:hover {
+  background-color: var(--color-primary);
+}
+
+#similar {
+  margin-bottom: 21rem;
+}
+
+@media all and (max-width: 102.4rem) {
+  #complete {
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+    padding-left: 20rem;
+    padding-right: 20rem;
+    margin-bottom: 8rem;
+  }
+}
+
+@media all and (max-width: 76.8rem) {
+  #complete {
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    margin-bottom: 8rem;
+  }
+}
