@@ -428,6 +428,22 @@ button {
   display: block;
 }
 
+#navigation .navi__menu .navi__depth1--list > a.active {
+  display: inline-block;
+  animation: naviClick 0.7s infinite;
+}
+
+@keyframes naviClick {
+  0% {
+    color: var(--color-accent);
+    border-bottom: 1px solid currentColor;
+  }
+  100% {
+    color: var(--color-primary);
+    border-bottom: 1px solid transparent;
+  }
+}
+
 #navigation .navi__community .navi__depth1--list > a:after,
 #navigation .navi__help .navi__depth1--list:last-child > a:after {
   content: "\003E";

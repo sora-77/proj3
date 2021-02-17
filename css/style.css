@@ -74,6 +74,7 @@
   height: 3.4rem;
   border-radius: 7px;
   font-size: var(--medium-size);
+  cursor: default;
 }
 
 #promotion .promo__info--right .discount-sticker span {
@@ -130,6 +131,19 @@
   flex: 1;
   border: 1.5rem solid #fff;
   transition: 0.5s;
+}
+
+#destination .city.active {
+  animation: border 0.7s infinite;
+}
+
+@keyframes border {
+  0% {
+    border: 1.5rem solid #fff;
+  }
+  100% {
+    border: 1.5rem solid var(--color-primary-light);
+  }
 }
 
 #destination .city .img-box {

@@ -55,6 +55,7 @@
   overflow: hidden;
   cursor: pointer;
   margin-right: 3rem;
+  animation: buttonBlink 0.5s infinite alternate;
 }
 
 .book-btn a {
@@ -87,6 +88,20 @@
 
 .book-btn:hover .btn__invisible {
   top: 0;
+}
+
+@keyframes buttonBlink {
+  0% {
+    background-image: linear-gradient(
+      to right,
+      var(--color-primary),
+      var(--color-primary-dark)
+    );
+  }
+  100% {
+    background-image: none;
+    background-color: var(--color-primary-light);
+  }
 }
 
 /*
@@ -594,6 +609,19 @@
   width: 100%;
 }
 
+#hotel__products .booking-button.active {
+  animation: buttonClick 0.5s infinite alternate;
+}
+
+@keyframes buttonClick {
+  0% {
+    background-color: var(--color-primary);
+  }
+  100% {
+    background-color: var(--color-primary-light);
+  }
+}
+
 #hotel__products .booking-button.small-ver {
   padding: 1.2rem 3rem;
   background-color: var(--color-primary-light);
@@ -617,7 +645,7 @@
   font-size: var(--medium-size);
   font-weight: 100;
   font-family: var(--noto-font);
-  padding: 1.1rem;
+  padding: 1.1rem 6rem;
   width: 100%;
 }
 

@@ -506,7 +506,6 @@
 
 #list .hotel__booking .booking-button {
   background-color: var(--color-primary);
-  padding: 1.2rem 2.4rem;
 }
 
 #list .hotel__booking .booking-button:hover {
@@ -514,10 +513,25 @@
 }
 
 #list .hotel__booking .booking-button a {
+  display: inline-block;
   color: #fff;
   font-size: var(--large-size);
   font-weight: 100;
   font-family: var(--noto-font);
+  padding: 1.2rem 2.4rem;
+}
+
+#list .hotel__booking .booking-button.active {
+  animation: buttonClick 0.5s infinite alternate;
+}
+
+@keyframes buttonClick {
+  0% {
+    background-color: var(--color-primary);
+  }
+  100% {
+    background-color: var(--color-primary-light);
+  }
 }
 
 #app__banner {
@@ -618,11 +632,11 @@
   }
 
   #list .hotel__booking .booking-button {
-    padding: 1rem 2rem;
   }
 
   #list .hotel__booking .booking-button a {
     font-size: 2rem;
+    padding: 1rem 2rem;
   }
 }
 

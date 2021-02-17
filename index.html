@@ -3,19 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>
+        Hotel Delight-KSR
+    </title>
 
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/slick.css">    
     <link rel="stylesheet" href="http://code.jquery.com/ui/1.8.18/themes/base/jquery-ui.css" type="text/css" />  
+    <link rel="shortcut icon" href="images/favicon.ico">
 
-
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-3.0.0.js"></script> 
+    <script src="http://code.jquery.com/ui/1.8.18/jquery-ui.min.js"></script>
     <script src="js/jquery-migrate-1.1.1.js"></script>
 
-    <script src="http://code.jquery.com/ui/1.8.18/jquery-ui.min.js"></script>
-    <script src="http://code.jquery.com/jquery-migrate-3.0.0.js"></script> 
-    <script src="js/jquery-3.1.1.min.js"></script>
 
     <script src="js/slick.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/slide.js"></script>
@@ -120,7 +122,7 @@
                     <div class="navi__accomodation">
                         <h5 class="navi__title">숙소</h5>
                         <ul class="navi__depth1">
-                            <li class="navi__depth1--list"><a href="sub1.html">국내숙소</a>
+                            <li class="navi__depth1--list"><a href="sub1.html" class="active">국내숙소</a>
                                 <!--<ul class="navi__depth2">
                                     <li><a href="#">지역</a></li>
                                     <li><a href="#">도시</a></li>
@@ -397,12 +399,12 @@
 
                     </div>
                     <div class="search__checkin search__select check-in">
-                        <label for="startDate--i" class="date__label">체크인 </label>
-                        <input type="text" id="startDate--i" class="date__input" placeholder="2020.02.23" autocomplete="off">
+                        <label for="startDate" class="date__label">체크인 </label>
+                        <input type="text" id="startDate" class="date__input" placeholder="2020.02.23" autocomplete="off">
                     </div>
                     <div class="search__checkout search__select check-out">
-                        <label for="endDate--i" class="date__label">체크아웃 </label>
-                        <input type="text" id="endDate--i" class="date__input" placeholder="2020.02.24" autocomplete="off">
+                        <label for="endDate" class="date__label">체크아웃 </label>
+                        <input type="text" id="endDate" class="date__input" placeholder="2020.02.24" autocomplete="off">
                     </div>
                     <div class="search__guest search__select guest">
                         
@@ -470,12 +472,12 @@
                         </div>
                     </div>
                     <div class="search__checkin search__select check-in">
-                        <label for="startDate" class="date__label">체크인 </label>
-                        <input type="text" id="startDate" class="date__input" placeholder="2020.02.23" autocomplete="off">
+                        <label for="startDate--i" class="date__label">체크인 </label>
+                        <input type="text" id="startDate--i" class="date__input" placeholder="2020.02.23" autocomplete="off">
                     </div>
                     <div class="search__checkout search__select check-out">
-                        <label for="endDate" class="date__label">체크아웃 </label>
-                        <input type="text" id="endDate" class="date__input" placeholder="2020.02.24" autocomplete="off">
+                        <label for="endDate--i" class="date__label">체크아웃 </label>
+                        <input type="text" id="endDate--i" class="date__input" placeholder="2020.02.24" autocomplete="off">
                     </div>
                     <div class="search__guest search__select guest">
                         
@@ -536,12 +538,14 @@
                     <section class="lazy slider">
                         <div>
                           <div class="img-box">
+                              <a href="sub2.html">
                             <img src="image/hotel-promo.jpg">
+                            </a>
                           </div>
                           <div class="promo__info">
                               <div class="promo__info--left">
-                                  <span class="hotel--detail">부산 해운대·<a href="#">4.3 / 5 (2,327개 후기)</a></span>
-                                  <a class="hotel--name">부산 웨스틴조선호텔</a>
+                                  <span class="hotel--detail">서울 강남·<a href="#">4.3 / 5 (2,327개 후기)</a></span>
+                                  <a class="hotel--name" href="sub2.html">글래드 라이브 강남</a>
                               </div>
                               <div class="promo__info--right">
                                  <button class="discount-sticker">25% <span>할인</span></button>
@@ -555,7 +559,9 @@
                         </div>
                         <div>
                             <div class="img-box">
-                                <img src="image/poolvilla1.jpg">
+                                <a href="#">
+                                    <img src="image/poolvilla1.jpg">
+                                </a>
                               </div>
                               <div class="promo__info">
                                   <div class="promo__info--left">
@@ -574,7 +580,9 @@
                         </div>
                         <div>
                             <div class="img-box">
-                              <img src="image/poolvilla2.jpg">
+                                <a href="#">
+                                    <img src="image/poolvilla2.jpg">
+                                </a>
                             </div>
                             <div class="promo__info">
                                 <div class="promo__info--left">
@@ -682,7 +690,7 @@
         <section id="destination">
             
                 <article class="city">
-                    <a>
+                    <a href="#">
                         <div class="img-box">
                         <img src="image/jeju.jpg" alt=""></div>
                         <p>
@@ -691,7 +699,7 @@
                         </p>
                     </a>
                 </article>
-                <article class="city">
+                <article class="city active">
                     <a href="sub1.html">
                     <div class="img-box">
                     <img src="image/seoul.jpg" alt=""></div>
@@ -702,7 +710,7 @@
                     </a>    
                 </article>
                 <article class="city">
-                    <a>
+                    <a href="#">
                     <div class="img-box">
 
                     <img src="image/busan.jpg" alt=""></div>
@@ -713,7 +721,7 @@
                     </a>
                 </article>
                 <article class="city">
-                    <a>
+                    <a href="#">
                     <div class="img-box">
 
                     <img src="image/yangyang.jpg" alt=""></div>
@@ -724,7 +732,7 @@
                     </a>
                 </article>
                 <article class="city">
-                    <a>
+                    <a href="#">
                     <div class="img-box">
 
                     <img src="image/suwon.jpg" alt=""></div>
